@@ -1,0 +1,5376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+
+<style>
+
+
+/*TAG ATTRIBUTE*/
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: black;
+}
+
+a{
+  text-decoration:none;
+  font-size:14px;
+  color:black;
+}
+
+/*CLASS ATTRIBUTE*/
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: Gainsboro;
+  width: 20%;
+
+}
+
+.right {
+  right: 0;
+  background-color: white;
+  width:80%;
+}
+
+.lefttxt{
+    margin-left:10px;
+}
+
+.righttxt{
+    margin-left:20px;
+    line-height: 1.5;
+    text-align:justify;
+    margin-right:20px;
+}
+
+
+/*ID ATTRIBUTE*/
+
+#centertxt{
+    text-align:center;
+}
+
+#align{
+    text-align:justify;
+}
+
+#question{
+    color:blue;
+    font-size:25px;
+    text-transform:uppercase;
+}
+
+.tran{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scaleX(1.5);
+}
+
+.trany{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scaleY(1.5);
+}
+
+.tranxy{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scale(1.5);
+}
+
+.tran1{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:8s;
+    
+}
+.tran1:hover{
+    transform:rotate(45deg);
+}
+
+.tran2{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:3s;
+    
+}
+.tran2:hover{
+    transform:rotateY(180deg);
+}
+
+.tran3{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:3s;
+    transition-delay:2s;
+    
+}
+.tran3:hover{
+    transform:rotateX(180deg);
+}
+
+.tran4{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    animation-name:myanime;
+    animation-duration:5s;
+    
+}
+@keyframes myanime{
+    from{background-color:red;}
+    to{background-color:blue;}
+}
+
+.tran5{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    animation-name:myanime2;
+    animation-duration:10s;
+    
+}
+@keyframes myanime2{
+    25%{background-color:red;}
+    50%{background-color:blue;}
+    75%{background-color:green;}
+    100%{background-color:black;}
+}
+</style>
+</head>
+<body>
+
+
+<!--LEFT SCREEN-->
+<div class="split left">
+  <div class="lefttxt">
+  <h2>HTML5</h2>
+    <p><b><u><a href="#intro">INTRODUCTION</a></u></b></p>
+    <ul>
+      <li>HTML5 Overview</li>
+      <li>Saving time and code with HTML5</li>
+      <li>Case Sensitive</li>
+      <li>Tag, Attributes and Element(inline and block level element).</li>
+      <li>Sementic and non-sementic element</li>
+      <li>Html5 Browser Support</li>
+    </ul>
+    <p><b><u><a href="#tags">ALL TAGS IN HTML</a></u></b></p>
+    <ul>
+      <li>Html Global Attributes</li> 
+      <li>comment tag</li>
+      <li>head tag</li>
+      <li>heading tag</li>
+      <li>formating tag</li>
+      <li>image tag</li>
+      <li>link tag(internal,external)</li>
+      <li>list tag(ordered,unordered,definition)</li>
+      <li>marquee tag</li>
+      <li>table tag</li>
+      <li>frame, frameset</li>
+      <li>form tag</li>
+      <li>Colors in html(rgb,rgba)</li>
+      
+    </ul>
+    <p><b><u><a href="#spcr">HTML SPECIAL CHARACTERS</a></u></b></p>
+    <ul>
+    <li>Reserver characters</li>
+    <li>Copyright,Trademark and Registered entities</li>
+    <li>Currency Symbols</li>
+    <li>Quotation Mark and Apostophe entities</li>
+    <li>Arroe entities</li>
+    <li>Suit entities</li>
+
+    </ul>
+    <p><b><u><a href="https://htmlcolorcodes.com/">HTML COLOR PICKER</a></u></b></p>
+    <ul>
+      <li>htmlcolorcodes.com</li>
+    </ul>
+    <p><b><u><a href="https://fonts.google.com/">HTML FONT PICKER</a></u></b></p>
+    <ul>
+      <li>fonts.google.com/</li>
+    </ul>
+    <p><b><u><a href="#val">HTML5 VALIDATOR</a></u></b></p>
+    <ul>
+      <li>Validator in html</li>
+    </ul>
+   <p><b><u><a href="#event">HTML5 Event Handlers</a></u></b></p>
+    <ul>
+      <li>Event Handers</li>
+    </ul>
+    <p><b><u><a href="#css">CSS INTRODUCTION</a></u></b></p>
+    <ul>
+      <li>Viewport and screen size</li>
+      <li>Setting the viewport</li>
+    </ul>
+
+    <p><b><u><a href="#cmplt css">CSS</a></u></b></p>
+    <ul>
+      <li>Comments</li>
+      <li>How to write css</li>
+      <li>Css class and id</li>
+      <li>Child selector</li>
+      <li>Adjacent sibling selector</li>
+      <li>General sibling selector</li>
+      <li>Pseudo class selector</li>
+      <li>nth-Child(n) selector</li>
+      <li>nth-Child(n) selector even number</li>
+      <li>First and last child selector</li>
+      <li>Attribute selector</li>
+      <li>Attribute value selector</li>
+      <li>Universal selector</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p><b><u><a href="#bootstrap">BOOTSTRAP</a></u></b></p>
+      
+ 
+  
+  </div>
+</div>
+
+
+
+<!--RIGHT SCREEN-->
+<div class="split right">
+
+    <!--intro-->
+    <div class="righttxt" style="border-style: double; padding:20px;">
+      <h2 id="intro" style="text-align:center;">INTRODUCTION</h2>
+      
+      <p id='question' style="letter-spacing:3px;">HTML5 Overview</p>
+HTML5 offers new features (elements, attributes, event handlers, and APIs) for easier web application development and
+more sophisticated form handling.
+The HTML5 specification is based on HTML 4.01 Strict, but
+unlike previous HTML Recommendations, HTML5 does not
+use a Document Type Definition (DTD). Instead, it uses the
+Document Object Model (DOM, the “tree” formed by a document’s structure) as its basis rather than a particular set of syntax rules. It also differs from previous recommendations in that
+it includes detailed instructions for how browsers should handle malformed and legacy markup.<br>
+<p id='question' style="letter-spacing:3px;">SAVING TIME AND CODE WITH HTML5</p>
+<span style="color:cornflowerblue">POINT 1</span>
+Before HTML5, the Doctype for a
+standard HTML 4.01 page would have looked as follows:<br>
+<pre>&lt; !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd" &gt;</pre><br>
+Now, with HTML5, it's merely as follows:<br>
+<pre> &lt; !DOCTYPE html &gt;</pre><br>
+
+<br>
+<span style="color:cornflowerblue">POINT 2</span>
+With existing HTML
+4.01, the correct way of linking to a script file would be as follows:
+<pre>&lt; script src="js/jquery-1.6.2.js" type="text/javascript" &gt; &lt; /script &gt;</pre><br>
+HTML5 makes this easier:<br>
+<pre> &lt; script src="js/jquery-1.6.2.js" &gt; &lt;/script&gt;</pre><br>
+
+It's a similar case with linking to CSS files. HTML5 also accepts a far
+slacker syntax to be considered "valid". For example,<br> <pre>&lt;sCRipt SrC=js/jquery1.6.2.js&gt; &lt;/script&gt;</pre><br> is just as valid as the prior example. We've omitted the
+quotation marks around the script source as well as using a combination of upper
+and lower case characters in the tag and attribute names. But HTML5 doesn't care—it
+will still validate at the W3C HTML5 validator (http://validator.w3.org/).<br>
+
+<span style="color:cornflowerblue">POINT 3</span><br>
+<img src="img/nav.png" alt="css" /><br>
+HTML5 gives us some far more semantically
+meaningful elements to use instead. Common structural sections within pages such as
+header and navigation (and many more as we shall soon see) get their own element
+tags. Our code just became far more "semantic" with the &lt;nav&gt; tag telling browsers,
+"Hey, this section right here is for navigation". Good news for us but perhaps more
+importantly, good news for search engines, too. They'll now be able to understand our
+pages better than ever before and rank our content accordingly.<br>
+
+<p id='question' style="letter-spacing:3px;">HTML Versions:</p>
+<div class="table-responsive">
+  <table class="table mb16 reference text-center">
+    <tbody><tr>
+      <th width="50%" class="text-center">HTML Version</th>
+      <th class="text-center">Year</th>
+    </tr>
+    <tr><td>HTML 1.0</td><td>1993</td></tr>
+    <tr><td>HTML 2.0</td><td>1995</td></tr>
+    <tr><td>HTML 3.2</td><td>1997</td></tr>
+    <tr><td>HTML 4.01</td><td>1999</td></tr>
+    <tr><td>HTML 5.0</td><td>2014</td></tr>
+  </tbody></table>
+</div>
+<p id='question' style="letter-spacing:3px;">HTML Tags</p>
+<ul>
+  <li>
+    <p>All HTML tags are surrounding into opening <code>&lt;html&gt;</code> tag and closing <code>&lt;/html&gt;</code> tag.</p>
+  </li>
+  <li>
+    <p>HTML tags are two types, container tag, and non-container tag.</p>
+  </li>
+  <li>
+    <p>Most of the HTML tags are container tags. They hold markup data. E.g. <code>&lt;p&gt;</code>This is paragraph<code>&lt;/p&gt;</code> contains "This is paragraph", which is called container tag.</p>
+  </li>
+  <li>
+    <p>While few other non-container tags which are not hold anything. E.g. <code>&lt;br/&gt;</code> tag is non-container tag and used to break line. Also, the non-container tags are self-closing.</p>
+  </li>
+  <li>
+    <p>All HTML tags are written in lower alphabetical. As well as, all non-container tag (also called empty tags) are always written in self-closing.</p>
+  </li>
+</ul>
+<p id='question' style="letter-spacing:3px;">Case Sensitive</p>
+Html is not case sensitive , meaning <span style="color:green">&lt;p&gt; ... &lt;p&gt;, is same as &lt;P&gt; ... &lt;P&gt;</span><br>
+Only &nbsp tag is case sensitive.<br>
+ 
+      <p id='question' style="letter-spacing:3px;"> Tag, Attributes and Element(inline and block level).</p>
+      <u>Tag</u><br>
+      Html Tags are like keywords which have predefined meanings. Tags apply the meaning and formatting to the content between the Tags.<br>
+      <u>Attributes</u><br>
+      Attributes in the tag give additional information or additional formatting to the content within the Tag.<br>
+      Attributes are written in the starting tag.<br>
+      Syntax : attribute_name=”value”<br>
+      Example : &lt;h1 style="color:red"&gt; This is heading &lt;/h1&gt;<br>
+      <u>Elements</u><br>
+      The collection of tag,content and attributes is called as Elements. So in above example   &lt;h1 style="color:red"&gt; This is heading &lt;/h1&gt; is called as Element.<br>
+      <u>Inline element</u><br>
+      An inline element does not start on a new line.An inline element only takes up as much width as necessary.Example &lt;span&lt; element inside a paragraph.<br>
+      list of inline elements:<br>
+      <img src="img/inline.png" alt="html" /><br>
+      <u>Block element</u><br>
+      A block-level element always starts on a new line.A block-level element always takes up the full width available (stretches out to the left and right as far as it can).A block level element has a top and a bottom margin, whereas an inline element does not.
+      The &lt;div&gt; element is a block-level element.<br>
+      List of Block level elements:<br>
+      <img src="img/block.png" alt="html" />
+
+      <p id='question' style="letter-spacing:3px;">Sementic and non-sementic element</p>
+      Sementic elements<br>
+      1)These elements simply mean, elements with meaning. The reason being, there definition in the code tells the browser and the developer what they are supposed to do. Framing in simpler words, these elements describe the type of content they are supposed to contain.<br>
+2)Following is the list of some semantic elements :<br>
+article, aside, details, figcaption, figure, footer, form, header, main, mark, nav, table, section<br><br>
+      Non-sementic element<br>
+      1)Unlike, semantic elements they don’t have any meaning. They don’t tell anything about the content they contain. They can be used with different attributes to mark up semantics common to a group.<br>
+      2)Following is the list of some non-semantic elements:<br>
+      div, span    <br>
+
+
+      <p id='question' style="letter-spacing:3px;">HTML5 Browser Support</p>
+        Most of the new HTML5 semantic elements and attributes are
+        supported by contemporary desktop and mobile browsers
+        (Chrome, Safari, Opera, Firefox, and Internet Explorer 9+).
+        For browsers that do not support new elements and APIs, there
+        is usually a JavaScript polyfill (patch) that simulates support.
+        For a thorough list of existing polyfills, see Modernizr’s
+        collection at www.github.com/Modernizr/Modernizr/wiki/
+        HTML5-Cross-Browser-Polyfills.
+        One example of a simple polyfill is the “HTML5 Shiv” script
+        created by Remy Sharp. To make older browsers such as Internet Explorer 8 and earlier recognize new HTML5 elements
+        (thus making them accessible to styles and scripts), you could
+        write JavaScript to create each element in DOM one at a time.
+        For example, this command creates a section element:
+        document.createElement("section");<br>
+        The HTML5 Shiv script, created by Remy Sharp, creates all of
+        the new elements for you at once. To use it, simply point to the
+        Google-hosted script shown here:<br>
+       <pre> &lt;!--[if lt IE 9]&gt;<br>
+        &lt;script src="http://html5shiv.googlecode.com/svn/trunk/
+        html5-els.js"&gt; &lt;/script&gt;<br>
+        &lt;![endif]--&gt;</pre><br>
+        The following resources are useful for tracking HTML5 realworld support and use:<br>
+        “When Can I Use…”<br>
+        A comparison of browser support for HTML5, CSS3, and
+        other web technologies maintained by Alexis Deveria.<br>
+        HTML5 Please<br>
+        Recommends which HTML5 and CSS3 features are ready
+        to use and which fallback to use when appropriate.<br>
+        Wikipedia “Comparison of Layout Engines (HTML5)”<br>
+        Charts show HTML5 support by the major browser layout engines.<br>
+        HTML5 Readiness<br>
+        An interesting visualization of growing support for
+        HTML5 and CSS3 from 2008 to present.<br>
+
+</div>
+    <br>
+  
+  
+  
+  <!--tags-->
+  <div class="righttxt" style="border-style: double; padding:20px;">
+    <h2 id="tags" style="text-align:center;">ALL TAGS IN HTML</h2>
+    <p>
+      <span style="color:green;">NEW</span> - New tag introduce in HTML5<br>
+      <span style="color:red;">REMOVE</span> - Not Support in HTML5(use CSS instead), The following HTML 4.01 elements were made obsolete in
+      HTML5 because they were presentational, confusing, or
+      poorly supported:<br>
+      <span style="color:green;">NEW</span>/<span style="color:#ff0000;">REMOVE</span> - New Tag introduce in HTML5, But now yet support in HTML5
+    </p>
+    
+    <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Tag</th>
+        <th style="width: 60%;">Description</th>
+        <th style="width: 20%; text-align:center;">In HTML5?</th>
+      </tr>
+      <tr>
+        <td><a href="html_comment_tag.php"><b>&lt;!--...--&gt;</b></a></td>
+        <td>Describe a comment text in the source code</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_doctype_tag.php"><b>&lt;!doctype&gt;</b></a></td>
+        <td>Defines a document type</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_a_tag.php"><b>&lt;a&gt;</b></a></td>
+        <td>Specific a anchor (Hyperlink)<br>Use for link in internal/external web documents.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_abbr_tag.php"><b>&lt;abbr&gt;</b></a></td>
+        <td>Describes an abbreviation (acronyms)</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_address_tag.php"><b>&lt;address&gt;</b></a></td>
+        <td>Describes an address information</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_area_tag.php"><b>&lt;area&gt;</b></a></td>
+        <td>Defines an area in an image map</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_b_tag.php"><b>&lt;b&gt;</b></a></td>
+        <td>Specific text weight bold</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_base_tag.php"><b>&lt;base&gt;</b></a></td>
+        <td>Define a base URL for all the links with in a web page</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_bdo_tag.php"><b>&lt;bdo&gt;</b></a></td>
+        <td>Specific direction of text display</td>
+        <td>&nbsp;</td>
+      </tr>
+     
+      <tr>
+        <td><a href="html_blockquote_tag.php"><b>&lt;blockquote&gt;</b></a></td>
+        <td>Specifies a long quotation</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_body_tag.php"><b>&lt;body&gt;</b></a></td>
+        <td>Defines a main section(body) part in HTML document</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_br_tag.php"><b>&lt;br /&gt;</b></a></td>
+        <td>Specific a single line break</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_button_tag.php"><b>&lt;button&gt;</b></a></td>
+        <td>Specifies a press/push button</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_caption_tag.php"><b>&lt;caption&gt;</b></a></td>
+        <td>Define a table caption</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_cite_tag.php"><b>&lt;cite&gt;</b></a></td>
+        <td>Specifies a text citation</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_code_tag.php"><b>&lt;code&gt;</b></a></td>
+        <td>Specifies computer code text</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_col_tag.php"><b>&lt;col&gt;</b></a></td>
+        <td>Specifies a each column within a &lt;colgroup&gt; element in table</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_colgroup_tag.php"><b>&lt;colgroup&gt;</b></a></td>
+        <td>Defines a group of one or more columns inside table</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_dd_tag.php"><b>&lt;dd&gt;</b></a></td>
+        <td>Defines a definition description in a definition list</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_del_tag.php"><b>&lt;del&gt;</b></a></td>
+        <td>Specific text deleted in web document</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_dfn_tag.php"><b>&lt;dfn&gt;</b></a></td>
+        <td>Define a definition team</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_div_tag.php"><b>&lt;div&gt;</b></a></td>
+        <td>Define a division part</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_dl_tag.php"><b>&lt;dl&gt;</b></a></td>
+        <td>Define a definition list</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_dt_tag.php"><b>&lt;dt&gt;</b></a></td>
+        <td>Define a definition team</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_em_tag.php"><b>&lt;em&gt;</b></a></td>
+        <td>Define a text is emphasize format</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_fieldset_tag.php"><b>&lt;fieldset&gt;</b></a></td>
+        <td>Defines a grouping of related form elements</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_form_tag.php"><b>&lt;form&gt;</b></a></td>
+        <td>Defines a form section that having interactive input controls to submit form information to a server.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_h1_to_h6_tag.php"><b>&lt;h1&gt; to &lt;h6&gt;</b></a></td>
+        <td>Defines a Headings level from 1 to 6 different sizes.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_head_tag.php"><b>&lt;head&gt;</b></a></td>
+        <td>Defines header section of HTML document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_hr_tag.php"><b>&lt;hr /&gt;</b></a></td>
+        <td>Represent a thematic break between paragraph-level tags. It is typically draw horizontal line.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_html_tag.php"><b>&lt;html&gt;</b></a></td>
+        <td>Define a document is a HTML markup language</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_i_tag.php"><b>&lt;i&gt;</b></a></td>
+        <td>Defines a italic format text</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_iframe_tag.php"><b>&lt;iframe&gt;</b></a></td>
+        <td>Defines a inline frame that embedded external content into current web document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_img_tag.php"><b>&lt;img&gt;</b></a></td>
+        <td>Used to insert image into a web document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_input_tag.php"><b>&lt;input&gt;</b></a></td>
+        <td>Define a get information in selected input</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_ins_tag.php"><b>&lt;ins&gt;</b></a></td>
+        <td>Used to indicate text that is inserted into a page and indicates changes to a document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_kbd_tag.php"><b>&lt;kbd&gt;</b></a></td>
+        <td>Used to identify text that are represents keyboard input.</td>
+        <td>&nbsp;</td>
+      </tr>
+     
+      <tr>
+        <td><a href="html_label_tag.php"><b>&lt;label&gt;</b></a></td>
+        <td>Used to caption a text label with a form &lt;input&gt; element.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_legend_tag.php"><b>&lt;legend&gt;</b></a></td>
+        <td>Used to add a caption (title) to a group of related form elements that are grouped together into the &lt;fieldset&gt; tag.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_li_tag.php"><b>&lt;li&gt;</b></a></td>
+        <td>Define a list item either ordered list or unordered list.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_link_tag.php"><b>&lt;link&gt;</b></a></td>
+        <td>Used to load an external stylesheets into HTML document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_map_tag.php"><b>&lt;map&gt;</b></a></td>
+        <td>Defines an clickable image map.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_menu_tag.php"><b>&lt;menu&gt;</b></a></td>
+        <td>Used to display a unordered list of items/menu of commands.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_meta_tag.php"><b>&lt;meta&gt;</b></a></td>
+        <td>Used to provide structured metadata about a web page.</td>
+        <td>&nbsp;</td>
+      </tr>
+     
+      
+      <tr>
+        <td><a href="html_noscript_tag.php"><b>&lt;noscript&gt;</b></a></td>
+        <td>Used to provide an fall-back content to the browser that does not support the JavaScript.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_object_tag.php"><b>&lt;object&gt;</b></a></td>
+        <td>Used to embedded objects such as images, audio, videos, Java applets, and Flash animations.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_ol_tag.php"><b>&lt;ol&gt;</b></a></td>
+        <td>Defines an ordered list of items.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_optgroup_tag.php"><b>&lt;optgroup&gt;</b></a></td>
+        <td>Used to create a grouping of options, the related options are grouped under specific headings.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_option_tag.php"><b>&lt;option&gt;</b></a></td>
+        <td>Represents option items within a <code class="code b">&lt;select&gt;</code>, <code class="code b">&lt;optgroup&gt;</code> or <code class="code b">&lt;datalist&gt;</code> element.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_p_tag.php"><b>&lt;p&gt;</b></a></td>
+        <td>Used to represents a paragraph text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_param_tag.php"><b>&lt;param&gt;</b></a></td>
+        <td>Provides parameters for embedded <code class="code b">object</code> element.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_pre_tag.php"><b>&lt;pre&gt;</b></a></td>
+        <td>Used to represents preformatted text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_q_tag.php"><b>&lt;q&gt;</b></a></td>
+        <td>Represents the short quotation.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_s_tag.php"><b>&lt;s&gt;</b></a></td>
+        <td>Text display in strikethrough style.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_samp_tag.php"><b>&lt;samp&gt;</b></a></td>
+        <td>Represents text that should be interpreted as sample output from a computer program.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_script_tag.php"><b>&lt;script&gt;</b></a></td>
+        <td>Defines client-side JavaScript.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_select_tag.php"><b>&lt;select&gt;</b></a></td>
+        <td>Used to create a drop-down list.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_small_tag.php"><b>&lt;small&gt;</b></a></td>
+        <td>Used to makes the text one size smaller.</td>
+        <td>&nbsp;</td>
+      </tr>
+     
+      <tr>
+        <td><a href="html_span_tag.php"><b>&lt;span&gt;</b></a></td>
+        <td>Used to grouping and applying styles to inline elements.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_strong_tag.php"><b>&lt;strong&gt;</b></a></td>
+        <td>Represents strong emphasis greater important text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_style_tag.php"><b>&lt;style&gt;</b></a></td>
+        <td>Used to add CSS style to an HTML document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_sub_tag.php"><b>&lt;sub&gt;</b></a></td>
+        <td>Represents inline subscript text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_sup_tag.php"><b>&lt;sup&gt;</b></a></td>
+        <td>Represents inline superscript text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_table_tag.php"><b>&lt;table&gt;</b></a></td>
+        <td>Used to defines a table in an HTML document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_tbody_tag.php"><b>&lt;tbody&gt;</b></a></td>
+        <td>Used for grouping table rows.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_td_tag.php"><b>&lt;td&gt;</b></a></td>
+        <td>Used for creates standard data cell in HTML table.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_textarea_tag.php"><b>&lt;textarea&gt;</b></a></td>
+        <td>Create multi-line text input.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_tfoot_tag.php"><b>&lt;tfoot&gt;</b></a></td>
+        <td>Used to adding a footer to a table that containing summary of the table data.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_th_tag.php"><b>&lt;th&gt;</b></a></td>
+        <td>Used for creates header of a group of cell in HTML table.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_thead_tag.php"><b>&lt;thead&gt;</b></a></td>
+        <td>Used to adding a header to a table that containing header information of the table.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_title_tag.php"><b>&lt;title&gt;</b></a></td>
+        <td>Represents title to an HTML document.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_tr_tag.php"><b>&lt;tr&gt;</b></a></td>
+        <td>Defines a row of cells in a table.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="html_u_tag.php"><b>&lt;u&gt;</b></a></td>
+        <td>Represents underlined text.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_ul_tag.php"><b>&lt;ul&gt;</b></a></td>
+        <td>Defines an unordered list of items.</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="html_var_tag.php"><b>&lt;var&gt;</b></a></td>
+        <td>Represents a variable in a computer program or mathematical equation.</td>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><a href="html_acronym_tag.php"><b>&lt;acronym&gt;</b></a></td>
+        <td>Describes an acronyms</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_applet_tag.php"><b>&lt;applet&gt;</b></a></td>
+        <td>Embedding an applet in HTML document</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_basefont_tag.php"><b>&lt;basefont&gt;</b></a></td>
+        <td>Describes a default font color, size, face in a document</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+
+ <tr>
+        <td><a href="html_big_tag.php"><b>&lt;big&gt;</b></a></td>
+        <td>Defines a big text</td>
+        <td class="red">REMOVE</td>
+      </tr>
+<tr>
+        <td><a href="html_center_tag.php"><b>&lt;center&gt;</b></a></td>
+        <td>Specifies a text is display in center align</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_dir_tag.php"><b>&lt;dir&gt;</b></a></td>
+        <td>Define a directory list</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+ <tr>
+        <td><a href="html_font_tag.php"><b>&lt;font&gt;</b></a></td>
+        <td>Defines a font size, font face and font color for its text</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_frame_tag.php"><b>&lt;frame&gt;</b></a></td>
+        <td>Defines frame window.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+<tr>
+        <td><a href="html_frameset_tag.php"><b>&lt;frameset&gt;</b></a></td>
+        <td>Used to holds one or more &lt;frame&gt; elements.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_isindex_tag.php"><b>&lt;isindex&gt;</b></a></td>
+        <td>Used to create a single line search prompt for querying the contents of the document.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+
+<tr>
+        <td><a href="html_noframes_tag.php"><b>&lt;noframes&gt;</b></a></td>
+        <td>Used to provide a fallback content to the browser that does not support the &lt;frame&gt; element.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+<tr>
+        <td><a href="html_strike_tag.php"><b>&lt;strike&gt;</b></a></td>
+        <td>Represents strikethrough text.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+<tr>
+        <td><a href="html_tt_tag.php"><b>&lt;tt&gt;</b></a></td>
+        <td>Represents teletype text.</td>
+        <td class="red">REMOVE</td>
+      </tr>
+      <tr>
+        <td><a href="html_article_tag.php"><b>&lt;article&gt;</b></a></td>
+        <td>Defines an article</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_aside_tag.php"><b>&lt;aside&gt;</b></a></td>
+        <td>Describes contain set(or write) on aside place in page contain</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;audio&gt;</b></a></td>
+        <td>Specific audio content</td>
+        <td class="green">NEW</td>
+        
+      </tr>
+      <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;bdi&gt;</b></a></td>
+        <td>Specific audio content</td>
+        <td class="green">NEW</td>
+        
+      </tr>
+      <tr>
+        <td><a href="html_canvas_tag.php"><b>&lt;canvas&gt;</b></a></td>
+        <td>Specifies the display graphics on HTML web documment</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_command_tag.php"><b>&lt;command&gt;*</b></a></td>
+        <td>Define a command button, invoke as per user action</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;data&gt;**</b></a></td>
+        <td>Specific audio content</td>
+        <td class="green">NEW</td>
+        
+      </tr>
+      <tr>
+        <td><a href="html_datalist_tag.php"><b>&lt;datalist&gt;</b></a></td>
+        <td>Define a list of pre-defined options surrounding &lt;input&gt; tag</td>
+        <td class="green">NEW</td>
+      </tr>
+
+<tr>
+        <td><a href="html_details_tag.php"><b>&lt;details&gt;</b></a></td>
+        <td>Define a additional details hide or show as per user action</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_embed_tag.php"><b>&lt;embed&gt;</b></a></td>
+        <td>Define a embedding external application using a relative plug-in</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_figcaption_tag.php"><b>&lt;figcaption&gt;</b></a></td>
+        <td>Represents a caption text corresponding with a figure element</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_figure_tag.php"><b>&lt;figure&gt;</b></a></td>
+        <td>Represents self-contained content corresponding with a &lt;figcaption&gt; element</td>
+        <td class="green">NEW</td>
+      </tr>
+     
+      <tr>
+        <td><a href="html_footer_tag.php"><b>&lt;footer&gt;</b></a></td>
+        <td>Defines a footer section containing details about the author, copyright, contact us, sitemap, or links to related documents.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_header_tag.php"><b>&lt;header&gt;</b></a></td>
+        <td>Defines as a container that hold introductory content or navigation links.</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;main&gt;**</b></a></td>
+        <td>specifies the main content of a document</td>
+        <td class="green">NEW</td>
+       </tr>
+       <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;menuitem&gt;**</b></a></td>
+        <td>It is used to group HTML Headings.</td>
+        <td class="green">NEW</td>
+       </tr>
+       <tr>
+        <td><a href="html_audio_tag.php"><b>&lt;hgroup&gt;*</b></a></td>
+        <td>Specific audio content</td>
+        <td class="green">NEW</td>
+       </tr>
+<tr>
+        <td><a href="html_mark_tag.php"><b>&lt;mark&gt;</b></a></td>
+        <td>Used to highlighted (marked) specific text.</td>
+        <td class="green">NEW</td>
+      </tr> <tr>
+        <td><a href="html_meter_tag.php"><b>&lt;meter&gt;</b></a></td>
+        <td>Used to measure data within a given range.</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_nav_tag.php"><b>&lt;nav&gt;</b></a></td>
+        <td>Used to defines group of navigation links.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_output_tag.php"><b>&lt;output&gt;</b></a></td>
+        <td>Used for representing the result of a calculation.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_progress_tag.php"><b>&lt;progress&gt;</b></a></td>
+        <td>Represents the progress of a task.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_rp_tag.php"><b>&lt;rp&gt;</b></a></td>
+        <td>Used to provide parentheses around fall-back content to the browser that does not support the ruby annotations.</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_rt_tag.php"><b>&lt;rt&gt;</b></a></td>
+        <td>Specifies the ruby text of ruby annotation.</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_ruby_tag.php"><b>&lt;ruby&gt;</b></a></td>
+        <td>Used to represents a ruby annotation.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_section_tag.php"><b>&lt;section&gt;</b></a></td>
+        <td>Used to divide a document into number of different generic section.</td>
+        <td class="green">NEW</td>
+      </tr>
+ <tr>
+        <td><a href="html_source_tag.php"><b>&lt;source&gt;</b></a></td>
+        <td>Used to specifies multiple media resources.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_time_tag.php"><b>&lt;time&gt;</b></a></td>
+        <td>Represents the date and/or time in an HTML document.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_track_tag.php"><b>&lt;track&gt;</b></a></td>
+        <td>Represents text tracks for both the <code class="code b">&lt;audio&gt;</code> and <code class="code b">&lt;video&gt;</code> tags.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_video_tag.php"><b>&lt;video&gt;</b></a></td>
+        <td>Used to embed video content.</td>
+        <td class="green">NEW</td>
+      </tr>
+      <tr>
+        <td><a href="html_wbr_tag.php"><b>&lt;wbr&gt;</b></a></td>
+        <td>Defines a word break opportunity in a long string of text.</td>
+        <td class="green">NEW</td>
+      </tr>
+
+      <tr>
+        <td><a href="html_wbr_tag.php"><b>&lt;keygen&gt;</b></a></td>
+        <td>Defines a word break opportunity in a long string of text.</td>
+        <td class="green">NEW</td>
+      </tr>
+<tr>
+        <td><a href="html_eventsource_tag.php"><b>&lt;eventsource&gt;</b></a></td>
+        <td>Defines a source of event generates to remote server</td>
+        <td style="text-align:center;"><span style="color:#090;">NEW</span>/ <span style="color:#F00;">REMOVE</span></td>
+      </tr>
+<tr>
+        <td><a href="html_datagrid_tag.php"><b>&lt;datagrid&gt;</b></a></td>
+        <td>Define a represent data in datagrid either list wise or tree wise</td>
+        <td style="text-align:center;"><span style="color:#090;">NEW</span>/ <span style="color:#F00;">REMOVE</span></td>
+      </tr>
+
+<tr>
+        <td><a href="html_dialog_tag.php"><b>&lt;dialog&gt;**</b></a></td>
+        <td>Define a chat conversation between one or more person</td>
+        <td style="text-align:center;"><span style="color:#090;">NEW</span>/ <span style="color:#F00;">REMOVE</span></td>
+      </tr>
+
+<tr>
+        <td><a href="html_bb_tag.php"><b>&lt;bb&gt;</b></a></td>
+        <td>Define browser command, that command invoke as per client action</td>
+        <td style="text-align:center;"><span style="color:#090;">NEW</span>/ <span style="color:#F00;">REMOVE</span></td>
+      </tr>
+
+    </tbody></table><br>
+    * Removed from HTML5.1<br>
+    ** WHATWG and HTML5.1 only<br>
+
+    <p id='question' style="letter-spacing:3px;">Above tags in more detail</p>
+    <span style="font-size:20px; color:red;">&lt;a&gt; tag</span><br>
+    Attributes of the a tag<br>
+    <table border="1">
+  <tbody><tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:35%">Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="att_a_download.asp">download</a></td>
+    <td><i>filename</i></td>
+    <td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+  </tr>
+  <tr>
+    <td><a href="att_a_href.asp">href</a></td>
+    <td><i>URL</i></td>
+    <td>Specifies the URL of the page the link goes to</td>
+  </tr>
+  <tr>
+    <td><a href="att_a_hreflang.asp">hreflang</a></td>
+    <td><i>language_code</i></td>
+    <td>Specifies the language of the linked document</td>
+  </tr>
+  <tr>
+    <td><a href="att_a_media.asp">media</a></td>
+    <td><i>media_query</i></td>
+    <td>Specifies what media/device the linked document is optimized for</td>
+  </tr>
+  <tr>
+    <td><a href="att_a_ping.asp">ping</a></td>
+    <td><em>list_of_URLs</em></td>
+    <td>Specifies a space-separated list of URLs to which, when the link is 
+    followed, post requests with the body ping will be sent by the browser (in 
+    the background). Typically used for tracking.</td>
+      </tr>
+  <tr>
+    <td><a href="att_a_referrepolicy.asp">referrerpolicy</a></td>
+    <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>
+    origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+    <td>Specifies which referrer information to send with the link</td>
+      </tr>
+  <tr>
+    <td><a href="att_a_rel.asp">rel</a></td>
+    <td>alternate<br>
+ author<br>
+ bookmark<br>external<br>
+ help<br>
+ license<br>
+ next<br>
+ nofollow<br>
+ noreferrer<br>noopener<br>
+ prev<br>
+ search<br>
+ tag</td>
+    <td>Specifies the relationship between the current document and the linked document</td>
+      </tr>
+      <tr>
+    <td><a href="att_a_target.asp">target</a></td>
+    <td>_blank<br>
+      _parent<br>
+      _self<br>
+      _top</td>
+    <td>Specifies where to open the linked document<br>
+    _blank	Opens the linked document in a new window or tab<br>
+_self	Opens the linked document in the same frame as it was clicked (this is default)<br>
+_parent	Opens the linked document in the parent frame<br>
+_top	Opens the linked document in the full body of the window<br>
+framename	Opens the linked document in the named iframe</td>
+    </tr>
+    <tr>
+    <td><a href="att_a_type.asp">type</a></td>
+    <td><i>media_type</i></td>
+    <td>Specifies the media type of the linked document</td>
+    </tr>
+</tbody></table><br>
+
+<span style="font-size:20px; color:red;">&lt;abbr&gt; tag</span><br>
+The abbr tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". On mouse ove it, it shows the full form of the abbrivation given in the title<br>
+Example<br>
+<pre>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</pre><br>
+Output:<br>
+<abbr title="Hypertext Markup Language">HTML</abbr><br>
+<hr>
+<span style="font-size:20px; color:red;">&lt;address&gt; tag</span><br>
+The address tag defines the contact information for the author/owner of a document or an article.<br>
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.<br>
+The text in the address element usually renders in italic, and browsers will always add a line break before and after the address element.<br>
+Example:
+<pre>
+&lt;address&gt;
+Written by &lt;a href="mailto:webmaster@example.com"&gt;Jon Doe&lt;/a&gt;.&lt;br&gt;
+Visit us at:&lt;br&gt;
+Example.com&lt;br&gt;
+Box 564, Disneyland&lt;br&gt;
+USA
+&lt;/address&gt;
+</pre>
+Output:
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<hr>
+<span style="font-size:20px; color:red;">&lt;article&gt; tag</span><br>
+The article tag specifies independent, self-contained content.<br>
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.<br>
+Potential sources for the article element:<br>
+<ul>
+<li>Forum post</li>
+<li>Blog post</li>
+<li>News story</li>
+</ul><br>
+Example<br>
+<pre>
+&lt;article&gt;
+&lt;h2&gt;Google Chrome&lt;/h2&gt;
+&lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;
+&lt;/article&gt;
+</pre>
+Output:<br>
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+<hr>
+<span style="font-size:20px; color:red;">&lt;aside&gt; tag</span><br>
+The aside tag defines some content aside from the content it is placed in.<br>
+The aside content should be indirectly related to the surrounding content.<br>
+Tip: The aside content is often placed as a sidebar in a document.<br>
+Note: The aside element does not render as anything special in a browser. However, you can use CSS to style the aside element (see example below).<br>
+Example:<br>
+<pre>
+&lt;aside&gt;
+&lt;h4&gt;Epcot Center&lt;/h4&gt;
+&lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
+&lt;/aside&gt;
+</pre>
+Output:<br>
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+<hr>
+<span style="font-size:20px; color:red;">&lt;audio&gt; tag</span><br>
+
+<table class="ws-table-all notranslate" border="1">
+  <tbody><tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:15%">Value</th>
+    <th style="width:55%">Description</th>
+  </tr>
+  <tr>
+    <td><a href="att_audio_autoplay.asp">autoplay</a></td>
+    <td>autoplay</td>
+    <td>Specifies that the audio will start playing as soon as it is ready</td>
+  </tr>
+    <tr>
+    <td><a href="att_audio_controls.asp">controls</a></td>
+    <td>controls</td>
+    <td>Specifies that audio controls should be displayed (such as a play/pause button etc)</td>
+    </tr>
+  <tr>
+    <td><a href="att_audio_loop.asp">loop</a></td>
+    <td>loop</td>
+    <td>Specifies that the audio will start over again, every time it is finished</td>
+  </tr>
+    <tr>
+    <td><a href="att_audio_muted.asp">muted</a></td>
+    <td>muted</td>
+    <td>Specifies that the audio output should be muted</td>
+    </tr>
+  <tr>
+    <td><a href="att_audio_preload.asp">preload</a></td>
+    <td>auto<br>
+ metadata<br>
+ none</td>
+    <td>Specifies if and how the author thinks the audio should be loaded when the page loads</td>
+  </tr>
+  <tr>
+    <td><a href="att_audio_src.asp">src</a></td>
+    <td><i>URL</i></td>
+    <td>Specifies the URL of the audio file</td>
+  </tr>
+</tbody></table>
+<br>
+<pre style="background-color:#EEEFF5;">
+In source we can give different source.
+    &lt;audio controls&gt;
+      &lt;source src="img/song.ogg" type="audio/ogg"&gt;
+      &lt;source src="img/song.mpeg" type="audio/mpeg"&gt;
+        Your browser does not support the audio element.
+    &lt;/audio&gt;
+
+  1)autoplay syntax:
+    &lt;audio controls autoplay&gt;
+
+  2)loop syntax: the audio will go in loop automatically.
+    &lt;audio controls loop&gt;
+
+  3)muted syntax:
+    &lt;audio controls muted&gt;
+
+  4)preload syntax:
+    &lt;audio controls preload="none"&gt;   //it cane be(none,auto,metadata)
+
+</pre>
+
+Output:<br>
+<audio controls>
+  <source src="img/song.ogg" type="audio/ogg">
+  <source src="img/song.mpeg" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<hr>
+
+<span style="font-size:20px; color:red;">&lt;b&gt; tag</span><br>
+<pre>
+&lt;b&gt;This is bold text&lt;/b&gt;
+</pre>
+Output:<br>
+<b>This is bold text</b>
+<hr>
+<span style="font-size:20px; color:red;">&lt;base&gt; tag</span><br>
+<pre>
+&lt;base&gt;...&lt;/base&gt;
+</pre>
+Output:<br>
+<hr>
+<span style="font-size:20px; color:red;">&lt;b&gt; tag</span><br>
+<pre>
+&lt;b&gt;This is bold text&lt;/b&gt;
+</pre>
+Output:<br>
+<hr>
+<span style="font-size:20px; color:red;">&lt;bdi&gt; tag</span><br>
+<img src="img/bdi.png" height="400px" width="600px">
+<hr>
+<span style="font-size:20px; color:red;">&lt;bdo&gt; tag</span><br>
+<pre>
+&lt;bdo dir="rtl"&gt;This text will go right-to-left.&lt;/bdo&gt;
+</pre>
+Output:<br>
+<bdo dir="rtl">
+This text will go right-to-left.
+</bdo>
+<hr>
+<span style="font-size:20px; color:red;">&lt;blockquote&gt; tag</span><br>
+The &lt;blockquote&gt; tag specifies a section that is quoted from another source.Browsers usually indent <> elements
+
+<span style="font-size:20px; color:red;">&lt;br&gt; tag</span><br>
+Use for new line.<br>
+
+<span style="font-size:20px; color:red;">&lt;button&gt; tag</span><br>
+<pre style="background-color:#EEEFF5;">
+    1)autofocus
+    Specifies that a button should automatically get focus when the page loads.
+    &lt;button autofocus&gt;&lt;/button&gt;
+</pre>
+Output:<br>
+<button autofocus>This is autofocus</button>
+<pre style="background-color:#EEEFF5;">
+    2)disable
+    Specifies that a button should be disabled
+    &lt;button disable&gt;&lt;/button&gt;
+</pre>
+Output:<br>
+<button disabled>disabled button</button>
+<pre style="background-color:#EEEFF5;">
+  3)form:
+  A button located outside a form (but still a part of the form):
+  &lt;form action="" method="get" id="form1"&gt;
+  &lt;input type="text" id="fname" name="fname"&gt;
+  &lt;/form&gt;
+  
+  &lt;button type="submit" form="form1" value="Submit"&gt;Submit&lt;/button&gt;
+</pre>
+
+<pre style="background-color:#EEEFF5;">
+    4)formaction:
+    A form with two submit buttons. The first submit button submits the form data to "action_page.php",
+     and the second submits to "action_page2.php":
+
+    &lt;form action="/action1.php" method="get" id="form1"&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;
+    &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+    &lt;button type="submit" formaction="/action2.php" value="Submit"&gt;Submit to another page&lt;/button&gt;
+    &lt;/form&gt;
+</pre>
+<pre style="background-color:#EEEFF5;">
+    5)formmethod: get,post
+    just like formaction we can give from method on 2nd button.
+</pre>
+<pre style="background-color:#EEEFF5;">
+    5)formtarget: _blank, _self, _parent, _top, framename.
+    &lt;button type="submit" formtarget="_blank" value="Submit"&gt;Submit to another tab&lt;/button&gt;
+</pre>
+<pre style="background-color:#EEEFF5;">
+    6)type=button, reset, submit.
+    reset= to reset the form data.
+    submit= to submit the data at backend.
+</pre>
+<br>
+<span style="font-size:20px; color:red;">&lt;caption&gt; tag</span><br>
+To give caption to table.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;table&gt;
+    &lt;caption&gt;Monthly savings&lt;/caption&gt;
+</pre>
+Output:<br>
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<span style="font-size:20px; color:red;">&lt;cite&gt; tag</span><br>
+This tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+Example:<br>
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+<span style="font-size:20px; color:red;">&lt;code&gt; tag</span><br>
+This tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.<br>
+Example:<br>
+<code>
+&lt;caption&gt;This is html code&lt;/caption&gt;
+</code>
+<br>
+
+<span style="font-size:20px; color:red;">&lt;colgroup&gt;,&lt;col&gt; tag</span><br>
+The col tag specifies column properties for each column within a colgroup element.<br>
+The col tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;colgroup&gt;
+        &lt;col span="2" style="background-color:red"&gt;
+        &lt;col style="background-color:yellow"&gt;
+      &lt;/colgroup&gt;
+</pre>
+Output:<br>
+<table border="1">
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+
+<span style="font-size:20px; color:red;">&lt;del&gt; tag</span><br>
+Example:<br>
+<del>This is deleted text</del>
+
+<span style="font-size:20px; color:red;">&lt;dfn&gt; tag</span><br>
+The dfn tag stands for the "definition element", and it specifies a term that is going to be defined within the content.<br>
+<p><dfn>HTML</dfn>is the standard markup language for creating web pages.</p>
+    
+<span style="font-size:20px; color:red;">&lt;em&gt; tag</span><br>
+The em tag is used to define emphasized text. The content inside is typically displayed in italic.<br>
+<em>This is emphasized text</em><br><br>
+
+<span style="font-size:20px; color:red;">&lt;ins&gt; tag</span><br>
+This tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.<br>
+Output:
+<p>My favorite color is <ins>red</ins>!</p>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;kbd&gt; tag</span><br>
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p><br><br>
+
+<span style="font-size:20px; color:red;">&lt;menu&gt; tag</span><br>
+This tag was deprecated in HTML 4.01, but reintroduced in HTML5. However, it is better to avoid using this tag, because it is not supported by the major web browsers like Chrome, IE, Safari and Opera.<br><br>
+
+<span style="font-size:20px; color:red;">&lt;noscript&gt; tag</span><br>
+This tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;script&gt;
+      document.write("Hello World!")
+      &lt;/script&gt;
+      &lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;
+</pre>
+Output:<br>
+A browser with JavaScript disabled will show the text inside the noscript element ("Hello World!" will not be displayed).<br>
+The pre tag defines preformatted text.<br><br>
+
+<span style="font-size:20px; color:red;">&lt;pre&gt; tag</span><br>
+Text in a pre element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.<br><br>
+
+<span style="font-size:20px; color:red;">&lt;q&gt; tag</span><br>
+This tag defines a short quotation.<br>
+Example:<br>
+<p>Html is the <q>Hypertext markup language</q></p><br><br>
+
+<span style="font-size:20px; color:red;">&lt;s&gt; tag</span><br>
+The 's' tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.
+The 's' tag should not be used to define deleted text in a document, use the 'del' tag for that.<br>
+Example<br>
+<s>This is some incorrect text, inside the s tag</s>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;samp&gt; tag</span><br>
+This tag is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.<br>
+Example:<br>
+<samp>Press F1 to continue</samp>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;small&gt; tag</span><br>
+This tag defines smaller text (like copyright and other side-comments).<br>
+Example:<br>
+<small>This is small tag example</small>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;strong&gt; tag</span><br>
+This tag is used to define text with strong importance. The content inside is typically displayed in bold.<br>
+Example:<br>
+<strong>This is strong tag</strong>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;sub&gt; tag</span><br>
+This tag defines subscript text.Like H2O<br>
+Example:<br>
+<p>H<sub>2</sub>O is the chemical formula for water.</p>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;sup&gt; tag</span><br>
+This tag defines subscript text.Like square root.<br>
+Example:<br>
+<p>(2)<sup>2</sup>=4</p>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;u&gt; tag</span><br>
+Use for underline text.<br>
+Example:<br>
+<u>This is u tag</u>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;var&gt; tag</span><br>
+This tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.<br>
+Example:<br>
+<p>Area of triangle is <var>b</var>x<var>h</var></p>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;datalist&gt; tag</span><br>
+The datalist tag specifies a list of pre-defined options for an input element.
+The datalist tag is used to provide an "autocomplete" feature for input elements. Users will see a drop-down list of pre-defined options as they input data.
+The datalist element's id attribute must be equal to the input element's list attribute (this binds them together).<br>
+<pre style="background-color:#EEEFF5;">
+  &lt;form action="" method="get"&gt;
+    &lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt;
+    &lt;input list="browsers" name="browser" id="browser"&gt;
+      &lt;datalist id="browsers"&gt;
+        &lt;option value="Edge"&gt;
+        &lt;option value="Firefox"&gt;
+        &lt;option value="Chrome"&gt;
+        &lt;option value="Opera"&gt;
+        &lt;option value="Safari"&gt;
+      &lt;/datalist&gt;
+      &lt;/datalist&gt;
+    &lt;input type="submit"&gt;
+  &lt;/form&gt;
+</pre>
+Output:<br>
+<form action="" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+
+<span style="font-size:20px; color:red;">&lt;details&gt; tag</span><br>
+The details tag specifies additional details that the user can open and close on demand.
+The details tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+Any sort of content can be put inside the details tag. <br>
+<pre style="background-color:#EEEFF5;">
+    &lt;details&gt;
+      &lt;summary&gt;Epcot Center&lt;/summary&gt;
+      &lt;p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
+    &lt;/details&gt;
+
+    We can specify it should be open or closed, By default it is closed we can specify it open like this:
+    &lt;details open&gt;
+</pre>
+Output:<br>
+<details>
+      <summary>Epcot Center</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;figure&gt; &lt;figcaption&gt; tag</span><br>
+The figcaption tag defines a caption for a figure element. The figcaption element can be placed as the first or last child of the figure element.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;figure&gt;
+      &lt;img src="res.jpg" alt="Trulli" style="width:100%"&gt;
+      &lt;figcaption>Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    Figcaption can be give top or at bottom.
+</pre>
+Output:<br>
+<figure>
+  <img src="img/res.jpg" alt="Trulli" height="200px" width="200px">
+  <figcaption>Fig.1 - Tomato.</figcaption>
+</figure>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;mark&gt;tag</span><br>
+It defines text that should be marked or highlighted.<br>
+Example:<br>
+<p>Html stands for <mark>Hypertext markup language</mark>.</p>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;nav&gt;tag</span><br>
+The nav tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a nav element. The nav element is intended only for major block of navigation links.<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;nav&gt;
+          &lt;a href="/html/"&gt;HTML&lt;/a&gt; |
+          &lt;a href="/css/"&gt;CSS&lt;/a&gt; |
+          &lt;a href="/js/"&gt;JavaScript&lt;/a&gt; |
+          &lt;a href="/python/"&gt;Python&lt;/a&gt;
+      &lt;/nav&gt;
+</pre>
+Output:<br>
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">Python</a>
+</nav>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;progress&gt;tag</span><br>
+The progress tag represents the completion progress of a task.
+<pre style="background-color:#EEEFF5;">
+      &lt;label for="file"&gt;Downloading progress:&lt;/label&gt;
+      &lt;progress id="file" value="32" max="100"> 32% &lt;/progress&gt;
+</pre>
+Output:<br>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;section&gt;tag</span><br>
+The section tag defines a section in a document.<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;section&gt;
+        &lt;h2&gt;WWF History&lt;/h2&gt;
+        &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;
+      &lt;/section&gt;
+</pre>
+Output:<br>
+<section>
+  <h2>WWF History</h2>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<br><br>
+
+<span style="font-size:20px; color:red;">&lt;time&gt;tag</span><br>
+The time tag defines a specific time (or datetime).
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt;
+</pre>
+Output:<br>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+datetime attribute<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;p&gt;I have a date on &lt;time datetime="2017-02-14 20:00"&gt;Valentines day&lt;/time&gt;.&lt;/p&gt;
+</pre>
+Output:<br>
+<p>I have a date on <time datetime="2017-02-14 20:00">Valentines day</time>.</p>
+<br><br>
+
+
+
+
+    <p id='question' style="letter-spacing:3px;">Html global attributes</p>
+    <table class="table mb16 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Tag</th>
+        <th style="width: 20%;">Value</th>
+        <th style="width: 60%;">Description</th>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td>ID Name</td>
+        <td>Declared unique id for the element.</td>
+      </tr>
+      <tr>
+        <td>class</td>
+        <td>Class Name</td>
+        <td>Used in Cascading Style Sheet (CSS).</td>
+      </tr>
+      <tr>
+        <td>style</td>
+        <td>CSS properties</td>
+        <td>CSS code specifies inline the HTML element is presented.</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>Title Description</td>
+        <td>Display on the "tooltip" for your elements.</td>
+      </tr>
+    </tbody></table>
+    <p id='question' style="letter-spacing:3px;">Comment tag</p>
+    In html comment starts with &lt;!-- and ends with --&gt;<br>
+    
+    <p id='question' style="letter-spacing:3px;">head tag</p>
+
+<pre style="background-color:#EEEFF5;">
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="author" content="fareen"&gt;
+        &lt;meta name="description" content="The meta description is and html attribute that provides a brief summary of a webpage
+        Google recommends about 155 characters for use in the search results."&gt;
+        &lt;meta name="keywords" content="shoe, shoes, shoee, shos, footwear"&gt;         //if its a footware site etc, do not include a lot keywords just some..
+        &lt;link red="stylesheet" type="text/css" href="style.css"&gt; 
+        &lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt; 
+        &lt;title&gt; Title of the page&lt;/title&gt;
+    &lt;/head&gt;
+</pre>
+    HTML &lt;head&gt; element is a container tag and is placed before the &lt;body&gt; tag. The &lt;head&gt; element contains general information about the page, meta-information, style sheet URL and document type information.<br>
+
+      HTML &lt;head&gt; tag inside elements does not display n a body part in a web browser.<br>
+      
+      HTML &lt;head&gt; tag contains following elements that describe the metadata:<span style="color:green;"> &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;style&gt;, &lt;script&gt;, and &lt;base&gt;</span><br>
+
+
+    <span style="color:green;">&lt;title&gt;</span> gives the title to the page, this element is displayed in a browser tab.<br>
+    <span style="color:green;">&lt;meta&gt;</span> element is used to provide structured meta-information about a web page. It contains a variety of information about the document.<br>
+
+    The meta tag is used to specify page description, keywords, and other important information. It helps to optimize the web page on the search engine. This process is known as search engine optimization (SEO).<br>
+    <span style="color:green;">&lt;link&gt;</span> element is used to load an external style sheet into HTML document.  <br>
+    <span style="color:green;">&lt;style&gt;</span> element is used to write CSS style to an HTML document. It contains CSS properties.<br>
+    <span style="color:green;">&lt;script&gt;</span> element used to defines client-side JavaScript that is specified within the document or embedded external JavaScript file through the SRC attribute.<br>
+    <span style="color:green;">&lt;base&gt;</span> element specifies a base URL for all the links within a web page.<br>
+
+    <br>
+    &lt;meta&gt; tag attribute<br>
+    <table class="table reference" border="1">
+      <tbody><tr>
+        <th style="width: 17%;">Attributes</th>
+        <th style="width: 23%;">Value</th>
+        <th style="width: 60%;">Description</th>
+      </tr>
+      <tr>
+        <td>content</td>
+        <td>"text"</td>
+        <td>Specifies the content of the web page.</td>
+      </tr>
+      <tr>
+        <td>http-equiv</td>
+        <td>"content-type"
+          <br> "content-style-type"
+          <br> "expires"
+          <br> "refresh"
+          <br> "set-cookie"
+        </td>
+        <td>Specify HTTP header Information.
+          <br>
+          <br> Specify the time of expires.
+          <br> Specify the time of refresh.
+          <br> Specify the limit of the cookie.</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>author
+          <br> description
+          <br> keywords
+        </td>
+        <td>Specify the name for the author information.
+          <br> Specify the website content.
+          <br> Specify the website content keyword.</td>
+      </tr>
+    </tbody></table>
+    
+<br>
+
+<img src="img/head.png" /><br>
+
+    <p id='question' style="letter-spacing:3px;">Heading tag</p>
+    Browsers are supported various headings(h1,h2,h3,h4,h5,h6) in different sizes - with h1 being the largest and h6 being the smallest.<br> 
+  
+    <p id='question' style="letter-spacing:3px;">Formating tags</p>
+    <table class="table mb16 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Tag</th>
+        <th style="width: 40%;">Example</th>
+        <th style="width: 40%;">Results</th>
+      </tr>
+      <tr>
+        <td>&lt;b&gt;</td>
+        <td>&lt;b&gt;Bold Text&lt;/b&gt; </td>
+        <td>An example of&nbsp;<b>Bold Text</b></td>
+      </tr>
+      <tr>
+        <td>&lt;big&gt;</td>
+        <td>&lt;big&gt;Big Text&lt;/big&gt;</td>
+        <td>An example of&nbsp;<big>Big Text</big></td>
+      </tr>
+      <tr>
+        <td>&lt;center&gt;</td>
+        <td>&lt;center&gt;Center Text&lt;/center&gt;</td>
+        <td>An example of&nbsp;
+          <center>Center Text</center>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;em&gt;</td>
+        <td>&lt;em&gt;Emphasized Text&lt;/em&gt;</td>
+        <td>An example of&nbsp;<em>Emphasized Text</em></td>
+      </tr>
+      <tr>
+        <td>&lt;i&gt;</td>
+        <td>&lt;i&gt;Italic Text&lt;/i&gt;</td>
+        <td>An example of&nbsp;<i>Italic Text</i></td>
+      </tr>
+      <tr>
+        <td>&lt;small&gt;</td>
+        <td>&lt;small&gt;Small Text&lt;/small&gt; </td>
+        <td>An example of&nbsp;<small>Small Text</small></td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;</td>
+        <td>&lt;strong&gt;Strong Text&lt;/strong&gt;</td>
+        <td>An example of&nbsp;<strong>Strong Text</strong></td>
+      </tr>
+      <tr>
+        <td>&lt;sub&gt;</td>
+        <td>&lt;sub&gt;Subscript Text&lt;/sub&gt;</td>
+        <td>An example of&nbsp;<sub>Subscript Text</sub></td>
+      </tr>
+      <tr>
+        <td>&lt;sup&gt;</td>
+        <td>&lt;sup&gt;Superscript Text&lt;/sup&gt;</td>
+        <td>An example of&nbsp;<sup>Superscript Text</sup></td>
+      </tr>
+      <tr>
+        <td>&lt;del&gt;
+          <br> &lt;s&gt;
+          <br> &lt;strike&gt; </td>
+        <td>&lt;del&gt;Delete Text&lt;/del&gt;
+          <br> &lt;s&gt;Strike Text&lt;/s&gt;
+          <br> &lt;strike&gt;Strike Text&lt;/strike&gt; </td>
+        <td>An example of&nbsp;
+          <del>Delete Text</del>
+          <br> An example of&nbsp;
+          <s>Strike Text</s>
+          <br> An example of&nbsp;<strike>Strike Text</strike> </td>
+      </tr>
+      <tr>
+        <td>&lt;u&gt;</td>
+        <td>&lt;u&gt;Underline Text&lt;/u&gt;</td>
+        <td>An example of&nbsp;<u>Underline Text</u></td>
+      </tr>
+      <tr>
+        <td>&lt;tt&gt;</td>
+        <td>&lt;tt&gt;Teletype Text&lt;/tt&gt;</td>
+        <td>An example of&nbsp;
+          <tt>Teletype Text</tt>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;blockquote&gt;</td>
+        <td>&lt;blockquote&gt;Long Quotation&lt;/blockquote&gt;
+          <br> &lt;q&gt;Short Quotation Text&lt;/q&gt;</td>
+        <td>An example of&nbsp;
+          <q>Long Quotation Text</q>
+          <br> An example of&nbsp;
+          <q>Short Quotation Text</q>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <p id='question' style="letter-spacing:3px;">Image tag</p>
+    If there is a folder module which contain index.html and image inside the asset->img folder, in this case to go a step back we use ../<br>
+    In the given condition we use ../asset/img/logo.png<br>
+    ../ to come out of the folder <br>
+    <img src="img/path.png" /><br><br>
+    
+    Image tag attributes<br>
+    <table class="table mb16 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Attributes</th>
+        <th style="width: 20%;">Values</th>
+        <th style="width: 60%;">Description</th>
+      </tr>
+      <tr>
+        <td>src</td>
+        <td>"image source url path"</td>
+        <td>Required, Image path should be absolute path.</td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td>"size_px"</td>
+        <td>Specifies the Width to display the image.</td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td>"size_px"</td>
+        <td>Specifies the Height to display the image.</td>
+      </tr>
+      <tr>
+        <td>Align</td>
+        <td>"left"
+          <br>"right"</td>
+        <td>Specifies the image align side.</td>
+      </tr>
+      <tr>
+        <td>Border</td>
+        <td>"Size"
+          <br>eg. "0"</td>
+        <td>Specifies the image border size.</td>
+      </tr>
+      <tr>
+        <td>alt</td>
+        <td>"alternate text"</td>
+        <td>Required Attribute. Specifies text to be identify the image.</td>
+      </tr>
+    </tbody></table><br>
+    <p id='question' style="letter-spacing:3px;">Responsive Image/video</p>
+    For responsive try to always keep the image width=100%<br>
+    Add this to style.css to make image responsive same goes for video also.<br>
+    <pre style="background-color:#EEEFF5;">
+        img {
+            max-width: 100%;
+            height: auto;
+          }
+    </pre>
+    Now if we change the image width to some other size the image will still be responsive.<br>
+    If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:<br>
+
+    <p id='question' style="letter-spacing:3px;"> Link tag(internal,external,mailto)</p>
+    <u>Internal link</u><br>
+    HTML internal link is linked within the same web page. This link can be an absolute path or relative path.<br>
+    <img src="img/internallink.png" alt="html" /><br>
+    <u>External link</u><br>
+    Example : &lt;a href="contact.html" &gt;Contact&lt;/a&gt;<br>
+    <u>Mailto link</u><br>
+    Example : &lt;a href="mailto:fareenansari33@gmail.com" &gt;Email Me&lt;/a&gt;<br>
+    
+    <p id='question' style="letter-spacing:3px;">List tag(ordered,unordered,definition)</p>
+    <u>Ordered list</u><br>
+    HTML &lt;ol&gt; tag specified Order list display list of item and its attribute help to change the type of order list.<br>
+    &lt;ol&gt;, &lt;li&gt; tag attributes<br>
+    <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th>Attributes</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>1
+          <br> a
+          <br> A
+          <br> i
+          <br> I
+          <br> </td>
+        <td>Arabic Number,
+          <br> Lowercase alphabet,
+          <br> Uppercase alphabet,
+          <br> Lowercase roman numeral,
+          <br> Uppercase roman numeral,
+          <br> Default value is "1".</td>
+      </tr>
+      <tr>
+        <td>start</td>
+        <td>"1"</td>
+        <td>define start sequence number of the list.</td>
+      </tr>
+    </tbody></table><br>
+    <u>Unordered list</u><br>
+    HTML &lt;ul&gt; tag specified Unordered list display list of item and its attribute help to change the different type of list.<br>
+    &lt;ol&gt;, &lt;li&gt; tag attributes<br>
+    <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Attributes</th>
+        <th style="width: 20%;">Value</th>
+        <th style="width: 60%;">Description</th>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>disk
+          <br> circle
+          <br> square
+          <br>
+        </td>
+        <td>Disk bullet,
+          <br> Circle bullet,
+          <br> Square bullet
+          <br> default value is "disk".</td>
+      </tr>
+    </tbody></table><br>
+    <u>Definition list</u><br>
+    <ul>
+      <li>
+        <p>Definition list is use for create glossary list. Definition  list are stars with <span class="underline">&lt;dl&gt;</span> tag and close with <span class="underline">&lt;/dl&gt;</span> tag.</p>
+      </li>
+      <li>
+        <p><span class="underline">&lt;dl&gt;</span> tag have two tag <span class="underline">&lt;dt&gt;</span> and <span class="underline">&lt;dd&gt;</span> defined inside tag.</p>
+      </li>
+      <li>
+        <p><span class="underline">&lt;dl&gt;</span> tag  is a empty tag. Its use to define definition list. It does not have any attributes.</p>
+      </li>
+      <li>
+        <p><span class="underline">&lt;dt&gt;</span> tag  is a empty tag. Its use to define definition team. It does not have any attributes.</p>
+      </li>
+      <li>
+        <p><span class="underline">&lt;dd&gt;</span> tag  is a empty tag. Its use to define definition define. It does not have any attributes.</p>
+      </li>
+    </ul>
+      <img src="img/eg2.png" alt="html" /><br>
+      Output<br>
+      <dl>
+        <dt>URL
+          <dd>Universal Resource Locator
+        <dt>W3C
+          <dd>World Wide Web Consortium
+        <dt>PNG
+          <dd>Portable Network Graphics
+      </dl><br>
+      <p id='question' style="letter-spacing:3px;">Marquee tag</p>
+      <ul>
+        <li>
+          <p>HTML <span class="underline">&lt;marquee&gt;</span> tag use to create a scrolling text or scrolling image from left to right, right to left, top to bottom, bottom to top. There is no limit. It's user define choice.</p>
+        </li>
+        <li>
+          <p><span class="underline">&lt;marquee&gt;</span> tag is a container tag to create scrolling text.</p>
+        </li>
+        <li>
+          <p><span class="underline">&lt;marquee&gt;</span> tag support following some attributes. This attributes use to add more special effect and easy control.</p>
+        </li>
+      </ul>
+      <br>
+      Marquee tag attribute<br>
+      <table class="table mb32 reference" border="1">
+        <tbody><tr>
+          <th>Attributes</th>
+          <th>Values</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>behavior</td>
+          <td>"slide"
+            <br>
+            <br> "scroll"
+            <br> "alternate" </td>
+          <td>Start completely and stop as soon as text touches the margin.
+            <br> Start completely and off one side.
+            <br> Text bounce as soon as touch both side margin.</td>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>"color code"</td>
+          <td>Specifies the background color.</td>
+        </tr>
+        <tr>
+          <td>direction</td>
+          <td>"left"
+            <br> "right"
+            <br> "up"
+            <br> "down"
+          </td>
+          <td>Left to Right
+            <br> Right to Left
+            <br> Bottom to Top
+            <br> Top to Bottom</td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>"size"</td>
+          <td>Specifies width in marquee.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>"size"</td>
+          <td>Specifies height in marquee.</td>
+        </tr>
+        <tr>
+          <td>loop</td>
+          <td>"2"
+            <br> "infinite"
+          </td>
+          <td>Loop Continues in limited times.
+            <br> Loop Continues in Infinite.</td>
+        </tr>
+        <tr>
+          <td>scrollamount</td>
+          <td>"3"</td>
+          <td>Specifies Speed to scroll on the text.</td>
+        </tr>
+        <tr>
+          <td>scrolldelay</td>
+          <td>"3"</td>
+          <td>Specifies time wait long before each marquee.</td>
+        </tr>
+        <tr>
+          <td>hspace</td>
+          <td>"size"</td>
+          <td>Specifies left or right margin for outside marquee.</td>
+        </tr>
+        <tr>
+          <td>vspace</td>
+          <td>"size"</td>
+          <td>Specifies top or bottom margin for outside marquee.</td>
+        </tr>
+      </tbody></table>
+<br>
+      <p id='question' style="letter-spacing:3px;">Table tag</p>
+      &lt;table&gt; tag is used to create table in html.<br>
+      Table tag attributes<br>
+      <table class="table reference" border="1">
+        <tbody><tr>
+          <th style="width: 20%;">Attributes</th>
+          <th style="width: 20%;">Value</th>
+          <th style="width: 60%;">Description</th>
+        </tr>
+        <tr>
+          <td>align</td>
+          <td>left, right, center</td>
+          <td>Declared your alignment side.</td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>"size_px"</td>
+          <td>Specify the Width Size of the Table.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>"size_px"</td>
+          <td>Specify the Height Size of the Table.</td>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>"purple"</td>
+          <td>Specify the Background Color.</td>
+        </tr>
+        <tr>
+          <td>background</td>
+          <td>"specified_URL"</td>
+          <td>Specify the Background Image open for URL file.</td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>"size_px"</td>
+          <td>Specify the size of border thickness.</td>
+        </tr>
+        <tr>
+          <td>bordercolor</td>
+          <td>"yellow"</td>
+          <td>Specify the color of border.</td>
+        </tr>
+        <tr>
+          <td>cellspacing</td>
+          <td>"size_px"</td>
+          <td>Specify the space between two Cell.</td>
+        </tr>
+        <tr>
+          <td>cellpadding</td>
+          <td>"size_px"</td>
+          <td>Specify the space between cell boundary and text.</td>
+        </tr>
+      </tbody></table><br>
+      &lt;th&gt; tag attributes.<br>
+      <table class="table reference" border="1">
+        <tbody><tr>
+          <th style="width: 20%;">Attributes</th>
+          <th style="width: 20%;">Value</th>
+          <th style="width: 60%;">Description</th>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>"purple"</td>
+          <td>Specify the Background Color.</td>
+        </tr>
+        <tr>
+          <td>colspan</td>
+          <td>"Column_N"</td>
+          <td>Specify the span of there column.</td>
+        </tr>
+        <tr>
+          <td>rowspan</td>
+          <td>"Row_N"</td>
+          <td>Specify the span of there Row.</td>
+        </tr>
+      </tbody></table><br>
+      &lt;tr&gt; tag attribute.<br>
+      <table class="table reference" border="1">
+        <tbody><tr>
+          <th style="width: 20%;">Attributes</th>
+          <th style="width: 20%;">Value</th>
+          <th style="width: 60%;">Description</th>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>"purple"</td>
+          <td>Specify the Background Color.</td>
+        </tr>
+      </tbody></table> 
+<br>
+<p id='question' style="letter-spacing:3px;">Frame, Frameset tag</p>
+<u>Definition:</u><br>
+<ul>
+  <li>
+    <p>HTML Frame used to split the browser window in several individual frames that can contain a separate  HTML web document.</p>
+  </li>
+  <li>
+    <p>Frame is use to improve appearance and usability of a site. </p>
+  </li>
+  <li>
+    <p>HTML document within frame include a other web pages link can be opened in the desired frame.</p>
+  </li>
+</ul>
+<br>
+<u>Advantages of Frame:</u><br>
+<ul>
+  <li>
+    <p>Frame Provides technical sophisticated appearance to the web site.</p>
+  </li>
+  <li>
+    <p>It facility to reduce downloading time and improves the usability of the website.</p>
+  </li>
+  <li>
+    <p>Frames generally include navigation link, header or footers, which help user to find and navigate to required information.</p>
+  </li>
+  <li>
+    <p>It separates content of website from navigation elements, which is useful for website  maintenance and content modification.</p>
+  </li>
+</ul>
+<br>
+<u>Disadvantages of Frames</u><br>
+<ul>
+  <li>
+    <p>The web developer must be track of more HTML documents linked with main frame.</p>
+  </li>
+  <li>
+    <p>It is difficult to print the entire page, which is developed using frame.</p>
+  </li>
+</ul><br>
+<u>&lt;frameset&gt; tag attributes</u><br>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>cols</td>
+    <td><i>*</i><br><i>%</i><br><i>pixels</i></td>
+    <td>Specifies the number of columns and their width in a frameset.<br>
+      Default value is 100%.<br>
+      <i><b>*</b></i>: Allocated remaining size of the window. Eg. Create two vertical frames, use <i>cols="35%, *"</i>. Here <i>*</i> will takes remaining size of the window.</td>
+  </tr>
+  <tr>
+    <td>rows</td>
+    <td><i>*</i><br><i>%</i><br><i>pixels</i></td>
+    <td>Specifies the number of rows and their height in a frameset.<br>
+      Default value is 100%.<br>
+      <i><b>*</b></i>: Allocated remaining size of the window. Eg. Create two horizontal frames, use <i>cols="40%, *"</i>. Here <i>*</i> will takes remaining size of the window.</td>
+  </tr>
+</tbody></table><br>
+
+<u>&lt;frame&gt; tag attributes</u>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>frameborder</td>
+    <td><i>0</i><br><i>1</i></td>
+    <td>Specify whether display a border or not.</td>
+  </tr>
+  <tr>
+    <td>longdesc</td>
+    <td><i>url</i></td>
+    <td>Specify URL link to another page having a long description of the frame contents.</td>
+  </tr>
+  <tr>
+    <td>marginheight</td>
+    <td><i>pixel_size</i></td>
+    <td>Specify the top and bottom margins of frame.</td>
+  </tr>
+  <tr>
+    <td>marginwidth</td>
+    <td><i>pixel_size</i></td>
+    <td>Specify the left and right margins of frame.</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><i>name</i></td>
+    <td>Specify the frame name.</td>
+  </tr>
+  <tr>
+    <td>noresize</td>
+    <td><i>noresize</i></td>
+    <td>Specify that prevents to resize frame.</td>
+  </tr>
+  <tr>
+    <td>scrolling</td>
+    <td><i>auto</i><br><i>yes</i><br><i>no</i></td>
+    <td>Specify weather scrollbars should be display or not.</td>
+  </tr>
+  <tr>
+    <td>src</td>
+    <td><i>url</i></td>
+    <td>Specify web document URL to show in a frame.</td>
+  </tr>
+</tbody></table><br>
+<p id='question' style="letter-spacing:3px;">Form tag</p>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="tag/html_form_tag.php">&lt;form&gt;</a></td>
+    <td>Defines a form for user input.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_input_tag.php">&lt;input&gt;</a></td>
+    <td>Defines an input field data.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_button_tag.php">&lt;button&gt;</a></td>
+    <td>Defines a push button</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_textarea_tag.php">&lt;textarea&gt;</a></td>
+    <td>Defines a text-area (a multi-line text input box).</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_label_tag.php">&lt;label&gt;</a></td>
+    <td>Defines a label to the description.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_fieldset_tag.php">&lt;fieldset&gt;</a></td>
+    <td>Defines a border to the input data.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_legend_tag.php">&lt;legend&gt;</a></td>
+    <td>Defines a caption name write into fieldset.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_select_tag.php">&lt;select&gt;</a></td>
+    <td>Defines a drop-down select list box.</td>
+  </tr>
+  <tr>
+    <td><a href="tag/html_option_tag.php">&lt;option&gt;</a></td>
+    <td>Defines an option value in the drop-down box.</td>
+  </tr>
+</tbody></table><br>
+&lt;form&gt; tag attributes<br>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>"sender address"
+      <br>"Page"
+      <br>"Database_page"</td>
+    <td>Form all contain send to the defined link.</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>"get"
+      <br>"post"</td>
+    <td>Form send Get Method to Get Form Contains.
+      <br>Form send Post Method to Post Form Contains.</td>
+  </tr>
+</tbody></table><br>
+
+<span style="font-size:20px; color:red;">&lt;fieldset&gt; tag, &lt;legend&gt;</span><br>
+fieldset tag is used to group related elements in a form, It draws a box around the related elements.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;form action="/action_page.php"&gt;
+    &lt;fieldset&gt;
+      &lt;legend>Personalia:&lt;/legend&gt;
+      First name:
+      &lt;input type="text" id="fname" name="fname"&gt;
+      Last name:
+      &lt;input type="text" id="lname" name="lname"&gt;
+    &lt;/fieldset&gt;
+    &lt;/form&gt;
+</pre>
+
+<span style="font-size:20px; color:red;">&lt;form&gt; tag</span><br>
+<pre style="background-color:#EEEFF5;">
+    1)autocomplete: on, off
+    Specifies whether a form should have autocomplete on or off
+    Syntax:
+      &lt;form action="/action_page.php" autocomplete="on"&gt;
+      &lt;/form&gt;
+    
+    2)enctype:
+    The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
+    Syntax:
+      &lt;form action="/action_page.php" enctype="multipart/form-data"&gt;
+      &lt;/form&gt;
+
+    3)method=post, get
+    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+      Notes on GET:
+        Appends form-data into the URL in name/value pairs
+        The length of a URL is limited (about 3000 characters)
+        Never use GET to send sensitive data! (will be visible in the URL)
+        Useful for form submissions where a user wants to bookmark the result
+        GET is better for non-secure data, like query strings in Google
+      
+      Notes on POST:
+        Appends form-data inside the body of the HTTP request (data is not shown in URL)
+        Has no size limitations
+        Form submissions with POST cannot be bookmarked
+
+    4)name:
+    Specifies the name of a form.
+
+    5)target:_blank, _Self, _parent, _top
+</pre>
+
+Html &lt;input&gt; tag attribute:<br>
+<table class="table reference" border="1"> 
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>"text"
+      <br> "button"
+      <br> "password"
+      <br> "file"
+      <br> "checkbox"
+      <br> "radio"
+      <br> "reset"
+      <br> "submit"
+    </td>
+    <td>use input text value.
+      <br> use to input button
+      <br> use to text is convert password type.
+      <br> use to browse file.
+      <br> use to select option checkbox.
+      <br> use to select in radio type.
+      <br> use to input reset data.
+      <br> use to input submit data.</td>
+  </tr>
+  <tr>
+    <td>value</td>
+    <td>"value"</td>
+    <td>Specify the default value of element.</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>"value"</td>
+    <td>Specify unique name for the input element.</td>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td>"number"</td>
+    <td>Define width of numbered(character) size input box.</td>
+  </tr>
+  <tr>
+    <td>maxlength</td>
+    <td>"number"</td>
+    <td>Define maximum number(character) allow to enter input box.</td>
+  </tr>
+  <tr>
+    <td>checked</td>
+    <td>&nbsp;</td>
+    <td>Specify input element to be checked when it is first time loaded.</td>
+  </tr>
+  <tr>
+    <td>alt</td>
+    <td>"text"</td>
+    <td>Define input name to identify.</td>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>"left"
+      <br> "right"
+      <br> "center" </td>
+    <td>Define input type align in HTML document.</td>
+  </tr>
+  <tr>
+    <td>src</td>
+    <td>"URL"</td>
+    <td>Define image open to mouse down submit.</td>
+  </tr>
+</tbody></table><br>
+
+&lt;textarea&gt; tag attribute:<br>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>cols</td>
+    <td>"specify_number"</td>
+    <td>Define the Specify number of character visible in one line of text area.</td>
+  </tr>
+  <tr>
+    <td>rows</td>
+    <td>"specify_number"</td>
+    <td>Define the Specify number of line visible in text area.</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>"unique_name"</td>
+    <td>Specify unique name for the input element.</td>
+  </tr>
+</tbody></table><br>
+
+&lt;selection&gt; tag attribute<br>
+<table class="table reference" border="1">
+  <tbody><tr>
+    <th style="width: 20%;">Attributes</th>
+    <th style="width: 20%;">Value</th>
+    <th style="width: 60%;">Description</th>
+  </tr>
+  <tr>
+    <td>multiple</td>
+    <td>"space"</td>
+    <td>Define the Multiple select.</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>"Specify_Name"</td>
+    <td>Define the Specify name to select list description.</td>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td>"Specify_Number"</td>
+    <td>Define the Specify number of item list size.</td>
+  </tr>
+</tbody></table>
+<br>
+<span style="font-size:20px; color:red;">&lt;form&gt; tag</span><br>
+<pre style="background-color:#EEEFF5;">
+      &lt;optgroup label="Swedish Cars"&gt;
+          &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+          &lt;option value="saab"&gt;Saab&lt;/option&gt;
+      &lt;/optgroup&gt;
+
+      Here Swidish Cars will act as label for swedish cars, this cannot be selected.
+</pre>
+Output:<br>
+<form action="">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  
+</form>
+
+
+
+<p id='question' style="letter-spacing:3px;">color in html</p><br>
+1)RGB()<br>
+rgb(red, green, blue)<br>
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br>
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.<br>
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).<br>
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).<br>
+<br>
+2)RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.<br>
+
+An RGBA color value is specified with:<br>
+
+rgba(red, green, blue, alpha)<br>
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):<br>
+
+<br>
+3)HEX:<br>
+Example : #ff0000 for red<br>
+<br>
+4)HSL<br>
+HSL Value
+In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:<br>
+
+hsl(hue, saturation, lightness)<br>
+
+Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
+
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.<br>
+
+Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+<br>
+
+  </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+  <!--special characters-->
+      <div class="righttxt" style="border-style: double; padding:20px;">
+      <h2 id="spcr" style="text-align:center;">HTML SPECIAL CHARACTERS</h2>
+      <p id='question' style="letter-spacing:3px;">Reserver character in Html</p><br>
+      <table class="table mb32 reference" border="1">
+        <tbody><tr>
+          <th style="width: 13%;">Character</th>
+          <th style="width: 17%;">Decimal Entity</th>
+          <th style="width: 17%;">Name Entity</th>
+          <th style="width: 48%;">Description</th>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td> 
+          <td>&amp;#160;</td> 
+          <td>&amp;nbsp;</td> 
+          <td>None Breaking Space</td>
+        </tr> 
+
+        <tr> 
+          <td>"</td> 
+          <td>&amp;#34;</td> 
+          <td>&amp;quot;</td> 
+          <td>Double Quotation mark</td>
+        </tr> 
+        <tr> 
+          <td>'</td> 
+          <td>&amp;#39;</td> 
+          <td>&amp;apos;</td> 
+          <td>Single Quotation mark</td>
+        </tr> 
+        <tr> 
+          <td>&amp;</td> 
+          <td>&amp;#38;</td> 
+          <td>&amp;amp;</td> 
+          <td>ampersand</td> 
+        </tr> 
+        <tr> 
+          <td>&lt;</td> 
+          <td>&amp;#60;</td> 
+          <td>&amp;lt;</td> 
+          <td>less-than</td> 
+        </tr> 
+        <tr> 
+          <td>&gt;</td> 
+          <td>&amp;#62;</td> 
+          <td>&amp;gt;</td> 
+          <td>greater-than</td> 
+        </tr> 
+        <tr> 
+          <td>#</td> 
+          <td>&amp;#35;</td> 
+          <td>&nbsp;</td> 
+          <td>Hass Sign</td> 
+        </tr>  
+        <tr> 
+          <td>%</td> 
+          <td>&amp;#37;</td> 
+          <td>&nbsp;</td> 
+          <td>Percentage Sign</td> 
+        </tr> 
+        <tr> 
+          <td>(</td> 
+          <td>&amp;#40;</td> 
+          <td>&nbsp;</td> 
+          <td>Left Parenthesis</td> 
+        </tr> 
+        <tr> 
+          <td>)</td> 
+          <td>&amp;#41;</td> 
+          <td>&nbsp;</td> 
+          <td>Right Paremthesis</td> 
+        </tr>
+        <tr> 
+          <td>*</td> 
+          <td>&amp;#42;</td> 
+          <td>&nbsp;</td> 
+          <td>Left Parenthesis</td> 
+        </tr> 
+        <tr> 
+          <td>+</td> 
+          <td>&amp;#43;</td> 
+          <td>&nbsp;</td> 
+          <td>Plus Sign</td> 
+        </tr>
+        <tr> 
+          <td>-</td>
+          <td>&amp;#45;</td>
+          <td>&nbsp;</td>
+          <td>Hypen</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>&amp;#47;</td>
+          <td>&nbsp;</td>
+          <td>Slash</td>
+        </tr>
+      </tbody></table><br>
+      <p id='question' style="letter-spacing:3px;">Copyright, Trademark, and Registered Entities</p><br>
+      <table class="table mb32 reference" border="1">
+        <tbody><tr>
+          <th style="width: 13%;">Character</th>
+          <th style="width: 17%;">Decimal Entity</th>
+          <th style="width: 17%;">Name Entity</th>
+          <th style="width: 48%;">Description</th>
+        </tr>
+        <tr> 
+          <td>©</td>
+          <td>&amp;#169;</td>
+          <td>&amp;copy;</td>
+          <td>Copyright Symbol</td>
+        </tr> 
+        <tr> 
+          <td>™</td>
+          <td>&amp;#8482;</td>
+          <td>&amp;trade;</td>
+          <td>Trademark Symbol</td>
+        </tr> 
+        <tr> 
+          <td>®</td>
+          <td>&amp;#174;</td>
+          <td>&amp;reg;</td>
+          <td>Registered Symbol</td>
+        </tr>
+      </tbody></table><br>
+      <p id='question' style="letter-spacing:3px;">Currency Symbols</p><br>
+      <table class="table mb32 reference" border="1">
+        <tbody><tr>
+          <th style="width: 13%;">Character</th>
+          <th style="width: 17%;">Decimal Entity</th>
+          <th style="width: 17%;">Name Entity</th>
+          <th style="width: 48%;">Description</th>
+        </tr>
+        <tr> 
+          <td>¢</td> 
+          <td>&amp;#162;</td> 
+          <td>&amp;cent;</td> 
+          <td>Cent Currency(�)</td> 
+        </tr> 
+        <tr> 
+          <td>£</td> 
+          <td>&amp;#163;</td> 
+          <td>&amp;pound;</td> 
+          <td>English Pound Currency</td> 
+        </tr>  
+        <tr> 
+          <td>¤</td> 
+          <td>&amp;#164;</td> 
+          <td>&amp;curren;</td> 
+          <td>General Currency</td> 
+        </tr> 
+        <tr> 
+          <td>¥</td> 
+          <td>&amp;#165;</td> 
+          <td>&amp;yen;</td> 
+          <td>Japanese Yen</td> 
+        </tr> 
+          <tr> 
+          <td>€</td> 
+          <td>&amp;#8364;</td> 
+          <td>&amp;euro;</td> 
+          <td>European Euro</td> 
+        </tr>   
+          <tr> 
+          <td>$</td> 
+          <td>&amp;#36;</td> 
+          <td>$</td> 
+          <td>Dollar Sign</td> 
+        </tr>   
+          <tr> 
+          <td>₣</td> 
+          <td>&amp;#8355;</td> 
+          <td>₣</td> 
+          <td>Franc Sign</td> 
+        </tr>       
+      </tbody></table><br>
+     <p id='question' style="letter-spacing:3px;">Quotation Mark and Apostophe Entities</p><br>
+     <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 13%;">Character</th>
+        <th style="width: 17%;">Decimal Entity</th>
+        <th style="width: 17%;">Name Entity</th>
+        <th style="width: 48%;">Description</th>
+      </tr>
+      <tr> 
+        <td>'</td> 
+        <td>&amp;#8216;</td> 
+        <td>&amp;lsquo;</td> 
+        <td>Left/Opening single quote</td> 
+      </tr> 
+      <tr> 
+        <td>'</td> 
+        <td>&amp;#8217;</td> 
+        <td>&amp;rsquo;</td> 
+        <td>Right/Closing single quote</td> 
+      </tr>  
+      <tr> 
+        <td>"</td> 
+        <td>&amp;#8220;</td> 
+        <td>&amp;ldquo;</td> 
+        <td>Left/Opening double quote</td> 
+      </tr> 
+      <tr> 
+        <td>"</td> 
+        <td>&amp;#8221;</td> 
+        <td>&amp;rdquo;</td> 
+        <td>Right/Closing double quote</td> 
+      </tr>       
+    </tbody></table><br>
+    <p id='question' style="letter-spacing:3px;">Arrow Entities</p><br>
+    <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 13%;">Character</th>
+        <th style="width: 17%;">Decimal Entity</th>
+        <th style="width: 17%;">Name Entity</th>
+        <th style="width: 48%;">Description</th>
+      </tr>
+      <tr> 
+        <td>←</td> 
+        <td>&amp;larr;</td> 
+        <td>&nbsp;</td> 
+        <td>Leftward Arrow</td> 
+      </tr> 
+      <tr> 
+        <td>↑</td> 
+        <td>&amp;uarr;</td> 
+        <td>&nbsp;</td> 
+        <td>Upward Arrow</td> 
+      </tr> 
+      <tr> 
+        <td>→</td> 
+        <td>&amp;rarr;</td> 
+        <td>&nbsp;</td> 
+        <td>Righttward Arrow</td> 
+      </tr> 
+      <tr> 
+        <td>↓</td> 
+        <td>&amp;darr;</td> 
+        <td>&nbsp;</td> 
+        <td>Downward Arrow</td> 
+      </tr>     
+    </tbody></table><br>
+    <p id='question' style="letter-spacing:3px;">Suit Entities</p><br>
+    <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 13%;">Character</th>
+        <th style="width: 17%;">Decimal Entity</th>
+        <th style="width: 17%;">Name Entity</th>
+        <th style="width: 48%;">Description</th>
+      </tr>
+      <tr> 
+        <td>♠</td> 
+        <td>&amp;spades;</td> 
+        <td>&nbsp;</td> 
+        <td>Spade Suit</td> 
+      </tr> 
+      <tr> 
+        <td>♣</td> 
+        <td>&amp;clubs;</td> 
+        <td>&nbsp;</td> 
+        <td>Club Suit</td> 
+      </tr> 
+      <tr> 
+        <td>♥</td> 
+        <td>&amp;hearts;</td> 
+        <td>&nbsp;</td> 
+        <td>Heart Suit</td> 
+      </tr>  
+      <tr> 
+        <td>♦</td> 
+        <td>&amp;diams;</td> 
+        <td>&nbsp;</td> 
+        <td>Diamond Suit</td> 
+      </tr>         
+    </tbody></table>
+      </div>
+      <br>
+           
+
+        <!--validator-->
+      <div class="righttxt" style="border-style: double; padding:20px;">
+        <h2 id="val" style="text-align:center;">VALIDATOR IN HTML</h2>
+        <p id='question' style="letter-spacing:3px;">Visit this site to validate html5 file</p>
+        You can check to see if your HTML5 document is valid using
+        the online validator at <a href="https://validator.w3.org/" style="color: #F00;">validator.w3.org</a> (HTML5 support is in
+        beta as of this writing) or <a href="https://html5.validator.nu/" style="color:#F00">html5.validator.nu</a>
+        </div>
+        <br>
+
+
+        <!--event-->
+      <div class="righttxt" style="border-style: double; padding:20px;">
+        <h2 id="event" style="text-align:center;">HTML EVENT HANDLERS</h2>
+        
+        <img src="img/event.png" /><br>
+        <p id='question' style="letter-spacing:3px;">List of all events new/old:</p> <br>
+        https://way2tutorial.com/html/html5_events_handler_list.php<br>
+
+        </div>
+        <br>
+
+
+          <!--css INTRO-->
+      <div class="righttxt" style="border-style: double; padding:20px;">
+      <h2 id="css" style="text-align:center;">CSS INTRODUCTION</h2>
+      <p id='question' style="letter-spacing:3px;">VIEWPORT AND SCREEN SIZE</p>
+      It's important to understand that viewport and screen size are not the
+      same thing. Viewport relates to the content area within the browser
+      window, excluding the toolbars, tabs, and so on. More succinctly, it
+      relates to the area where a website actually displays. Screen size refers
+      to the physical display area of a device. Beware that some browser resizer
+      tools display the size, including browser elements such as the URL bar,
+      tabs, and search boxes, and others don't. In the following screenshot, the
+      actual viewport size is shown at the top-right position (1156 x 921 px)
+      whilst the Firesizer plugin shows the window size at the bottom-right
+      position (1171 x 1023).<br>
+      <img src="img/viewpoint.png" alt="css" /><br>
+      <p id='question' style="letter-spacing:3px; text-transform:uppercase;">Setting The Viewport</p>
+HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag.
+
+You should include the following &lt;meta&gt; viewport element in all your web pages:
+<pre style="background-color:#EEEFF5;">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+</pre>
+
+This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.<br>
+In some case if you won't provide the viewport the min media query will not work properly.<br>
+
+      </div>
+      <br>
+
+
+          <!--css-->
+      <div class="righttxt" style="border-style: double; padding:20px;">
+      <h2 id="cmplt css" style="text-align:center;">CSS</h2>
+      <p id='question' style="letter-spacing:3px;">CSS COMMENT</p>
+      In Css Comments starts with(/*) and ends with(*/), Example: /*this is comment*/<br>
+      <p id='question' style="letter-spacing:3px;">HOW TO WRITE CSS</p>
+      1)Inline css<br> 2)Internal css<br> 3)External style sheet<br> 4)@import style sheet<br><br>
+
+      <u>1)Inline CSS:</u><br>
+      Inline css has highest priority than other 3.<br>
+      Example<br>
+      <pre style="background-color:#EEEFF5;">
+      &lt;h2 style="font-size:18px; color:pink;"&gt;This is the eg of inline css&lt;/h2&gt;
+      </pre>
+      Output:<br>
+      <h2 style="font-size:18px; color:pink;">This is the eg of inline css</h2><br>
+
+      <u>1)Internal CSS:</u><br>
+      Internal CSS Style includes within web page using <span style="color:green;">&lt;style type="text/css"&gt;.....&lt;/style&gt;</span> element and between this element CSS style properties are listed. Internal CSS style normally written within <span style="color:green">&lt;head&gt;.....&lt;/head&gt;</span> element of the web page.<br>
+      Internal CSS style consists set of rules in 3 part:<br>
+      1)Selector (element, class, id)<br>
+      2)Property and<br>
+      3)Value<br>
+      Example:
+      <pre style="background-color:#EEEFF5;">
+      &lt;style type="text/css"&gt;
+        p {
+        color:purple;
+        margin-left:20px;
+        }
+      &lt;/style&gt;
+      </pre>
+
+      <u>3)External style sheet</u><br>
+      External Style Sheet define in separate .css extension file. and used to make global change also manage all web page from a single CSS document.
+      External style sheets give you control to change formatting and layout styles of every single elements in web pages. And only those web page who are linked with external CSS document.<br>
+      External style sheet consists set of rules in 4 part:<br>
+      1)External Source link<br>
+      2)Selector (element, class, id)<br>
+      3)Property and<br>
+      4)Value<br>
+
+      Example<br>
+      <pre style="background-color:#EEEFF5;">
+      &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+      </pre>
+
+      <u>4)External style sheet</u><br>
+      @import CSS Style is another way to loading a CSS file.
+      @import CSS Style define within <span style="color:green;">&lt;style type="text/css"&gt;.....&lt;/style&gt;</span> element in your <span style="color:green;">&lt;head&gt;.....&lt;/head&gt;</span> of your web page.<br>
+      @import CSS style consists set of rules in 3 part:<br>
+      1)@import (keyword)<br>
+      2)url()<br>
+      3)CSS file path<br>
+      Example<br>
+      <pre style="background-color:#EEEFF5;">
+      &lt;head&gt;
+      &lt;style&gt;
+        @import url("style.css");
+      &lt;/style&gt;
+      &lt;/head&gt;
+      </pre>
+
+      <p id='question' style="letter-spacing:3px;">CSS CLASS AND ID</p>
+      <p id='question' style="letter-spacing:3px;">CLASS</p>
+      CSS class is a selector to assign class name either one or group of element and apply specific styles.
+      Using class selector you can easily modify element styles.
+      CSS class selector define using class attribute with value (user define class name).
+      CSS class selector identify using (".") dot sign concatenate with user define class name.
+      CSS Class use for when you using JavaScript its identify of element using getElementByIClass() function.<br>
+      Example:<br>
+      <pre style="background-color:#EEEFF5;">
+      <u>style.css</u>
+      .mymargin{
+            margin-top:70px;
+        }
+      .para{
+          color:blue;
+      }
+
+      <u>index.html</u>
+        &lt;p class="mymargin para"&gt;Here it will take two class properties (mymargin and para).&lt;/p&gt;
+      </pre>
+
+      <u>Selecting the particular style with the specific html tag.</u>
+      <pre style="background-color:#EEEFF5;">
+          <u>style.css</u>
+            .mymargin{
+                  margin-top:70px;
+          }
+            p.mymargin{
+                  color:pink;
+            }
+          <u>index.html</u>
+          &lt;p class="mymargin"&gt;This is class selector.&lt;/p&gt;
+      </pre>
+      <u>Selecting the particular class and giving the style.</u><br>
+      <pre style="background-color:#EEEFF5;">
+      <u>style.css</u>
+         .inner{
+            text-align:center;
+          }
+
+          /*This will select all the p tag of inner class.*/
+          .inner p{
+            color:red;
+          }
+
+        <u>index.html</u>
+        &lt;div class="inner"&gt;
+          &lt;p&gt;This will be in red color&lt;/p&gt;
+        &lt;/div&gt;
+      </pre>
+
+      <u>Group tag selector</u>
+      <pre style="background-color:#EEEFF5;">
+      /*Like this we can select many tags.
+      In entire document p,a,h1 will get color red */
+      p, a, h1{
+        color:red;
+      } 
+      </pre>
+
+      <p id='question' style="letter-spacing:3px;">ID</p>
+       CSS ID is a use for "unique identifier an element". It means CSS ID selector can be called only one times in a document while class selector can be called multiple times in a document.
+       But you can use Class have a maximum flexibility. Class and ID have not any strong rules to where is use CSS ID or CSS Class.<br>
+       CSS ID: Unique Personally Identification(ID) in Number of ID's.<br>
+       CSS Class: Multiple Identification in Number of Class.<br>
+       Example<br>
+       <pre style="background-color:#EEEFF5;">
+       <u>style.css</u>
+       #para{
+         text-align:center;
+       }
+       <u>index.html</u>
+       &lt;p id="para"&gt;This is id selector.&lt;/p&gt;
+       </pre>
+
+       <p id='question' style="letter-spacing:3px;">CHILD SELECTOR</p>
+       <img src="img/child.png" alt="css" /><br>
+       In the above HTML, &lt;p&gt; tag that is the only child of the &lt;div&gt; tag can be selected by the child selector. &lt;p&gt; tag which is inside &lt;section&gt; tag will not be selected to apply the css property as it is a grand child of &lt;div&gt; tag.<br>
+      Example:<br>
+      <pre style="background-color:#EEEFF5;">
+      Giving css to the above code img.
+      div>p{
+        color:red;
+      }
+      </pre>
+      Output:<br>
+      <img src="img/childoutput.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">ADJACENT SIBLING SELECTOR</p>
+      In this selector the element which immediately precedes another element is selected to apply css property.
+      In the adjacent sibling selector, selectors are separated by + (plus) sign.<br>
+      <img src="img/ADJACENT.png" alt="css" /><br>
+      In the above example first <p> after closing the &lt;/div&gt; tag is the immediate preceder of the div tag, so in the adjacent sibling selector property is applied to that first &lt;p&gt; tag which is  after closing &lt;/div&gt;.<br>
+      Output:<br>
+      <img src="img/output2.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">GENERAL SIBLING SELECTOR</p>
+      In this selector the all the element  that   precedes another element is selected to apply css property.
+      In general sibling selectors, selectors are separated by ~(tilde) sign.<br>
+      <img src="img/general.png" alt="css" /><br>
+      Thus it can be seen that  all  <p> tags that are preceders of  <div> tag got the property i.e color red.
+      Output:<br>
+      <img src="img/output3.png" alt="css" /><br>
+      <p id='question' style="letter-spacing:3px;">PSEUDO CLASS SELECTOR</p>
+      Pseudo class can be considered as a pre-defined word(keyword). These classes when used to select give different states or effects to the HTML element.
+      With the help of pseudo classes we can change the css property during runtime.<br>
+      Following are the Pseudo classes.<br>
+      1):hover 2) :link  3) :active  4) :visited 5) :focus<br>
+      hover:This pseudo class is used to apply css property to the element when the user hovers the mouse cursor  over that element.<br>
+      link:This pseudo class is used to apply property to the unvisited link. For example if you want to change the default blue color of the link created by using anchor tag.<br>
+      visited: This pseudo class is used to apply the css property when element is clicked or Activated.<br>
+      focus:This pseudo class is used to apply the css property to those elements which are focused by the user<br>
+
+      Example:<br>
+      <pre style="background-color:#EEEFF5;">
+      a:hover{
+        color:red;
+      }
+      </pre>
+
+      <p id='question' style="letter-spacing:3px;">nth-CHILD(n) SELECTOR</p>
+      This selector is used to selector elements based on their position in the HTML document.'n' can be a Number or an expression.<br>
+      <img src="img/nth child.png" alt="css" /><br>
+      In the css it is mentioned with the nth child selector that the 4th paragraph which is child of &lt;div&t; tag gets red color.<br>
+      Output:<br>
+      <img src="img/output4.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">nth-CHILD(n) SELECTOR EVEN NUMBER</p>
+      If instead of n if 2n is taken then it applies property to all even paragraph tags. If we tahe 3n it will take every 3rd paragraph.<br>
+      <img src="img/even.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output5.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">FIRST AND LAST CHILD SELECTOR</p>
+      Selecting the first and last child<br>
+      <img src="img/first.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output6.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">ATTRIBUTE SELECTOR</p>
+      By using Attribute selector , we can target attribute or attribute value to apply property or style to HTML element.<br>
+      <img src="img/attribute.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output7.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">ATTRIBUTE VALUE SELECTOR</p>
+      If we need to give a different color to the content in the input box and label ‘Submit’ on the button then we can target the attribute and its value.<br>
+      <img src="img/valueselector.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output8.png" alt="css" /><br>
+
+      We are going to see three types in the attribute value selector.<br>
+
+      1)[attribute^=value]<br>
+
+      2)[attribute$=value]<br>
+      <img src="img/attributevalue.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output9.png" alt="css" /><br>
+
+      3)[attribute*=value]<br>
+      <img src="img/attributevalue1.png" alt="css" /><br>
+      Output:<br>
+      <img src="img/output10.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">UNIVERSAL SELECTOR</p>
+      This selector is used to apply property to every single element in the HTML document.
+      It is denoted by asterisk(*). Generally this selector is used to remove the default margin and padding of the HTML element or HTML document. <br>
+      <img src="img/universal.png" alt="css" /><br>
+
+      <p id='question' style="letter-spacing:3px;">TEXT PROPERTIES</p>
+      <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Property</th>
+        <th style="width: 60%;">Values</th>
+        <th style="width: 20%; text-align:center;">Example</th>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td>left<br>right<br>center<br>justify</td>
+        <td><p style="text-align:left">left align</p>
+        <p style="text-align:center">center align</p>
+        <p style="text-align:right">right align</p>
+        </td>
+      </tr>
+      <tr>
+        <td>text-decoration</td>
+        <td>none <br>overline<br>line-through<br>underline</td>
+        <td><p style="text-decoration:overline">overline</p>
+        <p style="text-decoration:line-through">line-through</p>
+        <p style="text-decoration:underline">underline</p>
+        </td>
+      </tr>
+      <tr>
+        <td>text-transform</b></a></td>
+        <td>uppercase<br>lowercase<br>capitalize</td>
+        <td><p style="text-transform:uppercase">uppercase</p>
+        <p style="text-transform:lowercase">lowercase</p>
+        <p style="text-transform:capitalize">capitalize</p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>text-indent</td>
+        <td>&nbsp;</td>
+        <td><p style="text-indent:50px;">text indentation</p></td>
+      </tr>
+      <tr>
+        <td>letter-spacing</td>
+        <td>&nbsp;</td>
+        <td><p style="letter-spacing:4px;">This is letter spacing</p></td>
+      </tr>
+      <tr>
+        <td>word-spacing</td>
+        <td>&nbsp;</td>
+        <td><p style="word-spacing:30px;">This is word spacing</p></td>
+      </tr>
+       <tr>
+        <td>text-shadow</td>
+        <td>&nbsp;</td>
+        <td>Syntax:{text-shadow: horizontal_shadow  vertical_shadow  blur_effect color;}
+        <p style="text-shadow:4px 4px 2px red;">This is text shadowing</p></td>
+      </tr>
+     </tbody>
+     </table><br>
+
+     <p id='question' style="letter-spacing:3px;">FONT PROPERTIES</p>
+      <table class="table mb32 reference" border="1">
+      <tbody><tr>
+        <th style="width: 20%;">Property</th>
+        <th style="width: 60%;">Values</th>
+        <th style="width: 20%; text-align:center;">Example</th>
+      </tr>
+      <tr>
+        <td>font-family</td>
+        <td>&nbsp;</td>
+        <td><p style="font-family:Arial, Helvetica, sans-serif;">font family</p>
+        </td>
+      </tr>
+       <tr>
+        <td>font-style</td>
+        <td>normal<br>italic<br>oblique</td>
+        <td><p style="font-style:normal;">font style normal</p>
+        <p style="font-style:italic;">font style italic</p>
+        <p style="font-style:oblique;">font style oblique</p>
+        </td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>normal<br>bold</td>
+        <td><p style="font-weight:normal;">font weight normal</p>
+        <p style="font-weight:bold;">font weight bold</p>
+        </td>
+      </tr>
+      <tr>
+        <td>font-variant<br><br><b>Note:</b>The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.</td>
+        <td>normal<br>small-caps</td>
+        <td><p style="font-variantt:normal;">font variant normal</p>
+        <p style="font-variant:small-caps;">font variant small-caps</p>
+        </td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>None</td>
+        <td><p style="color:red;">font color</p>
+        </td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>None</td>
+        <td><p style="font-size:40px;">font size</p>
+        </td>
+      </tr>
+      </tbody></table><br>
+      <u>Set Font Size With Em</u><br>
+      To allow users to resize the text (in the browser menu), many developers use em instead of pixels.<br>
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.<br>
+
+The size can be calculated from pixels to em using this formula: pixels/16=em<br>
+Example<br>
+ <pre style="background-color:#EEEFF5;">
+ style.css
+ p{
+   font-size: 0.875em; /* 14px/16=0.875em */
+ }
+ </pre>
+
+Responsive font size<br>
+The text size can be set with a vw unit, which means the "viewport width".<br>
+
+That way the text size will follow the size of the browser window:<br>
+ <pre style="background-color:#EEEFF5;">
+ h1{
+   font-size:10vw;
+ }
+ </pre>
+ Output:<br>
+ Resize the browser to see the effect.<br>
+ <p style="font-size:5vw;">Responsive font</p>
+
+ <u>LINE-HEIGHT PROPERTT:</u><br>
+ This property give space between lines.<br>
+ Example<br>
+  <pre style="background-color:#EEEFF5;">
+  div.a {
+  line-height: normal;
+}
+
+div.b {
+  line-height: 1.6;
+}
+
+div.c {
+  line-height: 80%;
+}
+
+div.d {
+  line-height: 200%;
+}
+  </pre>
+Output:<br>
+<p style="line-height:80%">Set line height 80%
+This is a paragraph with the recommended line-height.<br>
+The line height is here set to 1.6. This is a unitless value;<br>
+meaning that the line height will be relative to the font size.</p>
+
+<p id='question' style="letter-spacing:3px;">COLOR PROPERTY</p>
+We can give it in 3 ways : Name of the Color, RGB value, Hex Value<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+color: red;
+background-color: rgb(255,0,0);
+border-color: #FF0000;
+</pre>
+
+<p id='question' style="letter-spacing:3px;">SIZE OPTION</p>
+pixels - By default unit. Written as px<br>
+
+percent - Units can be given in %<br>
+Example<br>
+ <pre style="background-color:#EEEFF5;">
+  div{
+    width:100%;
+  }
+
+  OR
+
+  div{
+    width:20px;
+  }
+ </pre>
+
+<p id='question' style="letter-spacing:3px;">BORDER PROPERTY</p>
+Properties<br>
+1)border width and height<br>
+<pre style="background-color:#EEEFF5;">
+div {
+  height: 200px;
+  width: 500px;
+  background-color: powderblue;
+  border-style:solid;
+}
+</pre>
+Output:<br>
+<p style="border-height:100px; border-width:20px; border-style:solid;">Border height and width</p>
+
+2)Border style:<br>
+1)none , 2)hidden, 3)dotted, 4)dashed, 5)solid, 6)double, 7)groove, 8)ridge, 9)inset, 10)outset, 11)initial, 12)inherit<br>
+Example<br>
+<img src="img/bordereg.png" />
+Output<br>
+<img src="img/borderoutput.png" />
+
+Giving pixal, style, color together:<br>
+ <pre style="background-color:#EEEFF5;">
+ p{
+   border-bottom:20px double pink;
+ }
+ </pre>
+ Output:<br>
+ <p style="border-bottom:20px double pink">20px , double style , pink color</p>
+
+ Giving border top color<br>
+<pre style="background-color:#EEEFF5;">
+ p{
+   border-style:solid;
+   border-top-color:pink;
+ }
+ </pre>
+ Output<br>
+ <p style="border-style:solid; border-top-color:pink;">giving color to only top border.</p>
+
+<p id='question' style="letter-spacing:3px;">BOX SIZING</p>
+By default, the width and height of an element is calculated like this:<br>
+
+width + padding + border = actual width of an element<br>
+height + padding + border = actual height of an element<br>
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).<br>
+If we give border sizing property the size of the box will not increase when giving padding, border-width etc.<br>
+Example<br>
+Two divs with same size with .div1 with border-box property and .div2 without border-box property.<br>
+On div1 i gave border 8px with padding 30px still the box size is not increasing. On giving the same property on div2 the box size is increasing.<br>
+<img src="img/border-box.png" alt="css" /><br>
+<img src="img/output11.png" alt="css" /><br>
+The width after border-box will remain 300px only, but height may increase.<br>
+
+<p id='question' style="letter-spacing:3px;">FLOAT AND CLEAR PROPERTY</p>
+<p id='question' style="letter-spacing:3px;">FLAOT</p><br>
+1)left 2)right 3)none 4)inherit
+The CSS float property specifies how an element should float.<br>
+Example<br>
+div tag takes the 100% width of the browser when we give 4 div 400 px without giving float property all tag will start on new line. By giving the float propery the div element will float left, conside the example below.<br>
+<img src="img/float.png" alt="css" /><br>
+<img src="img/output12.png" alt="css" width="700px;"/><br>
+
+After giving the float property<br>
+<pre style="background-color:#EEEFF5;">
+ div{
+        width:400px;
+        border:3px solid blue;
+        float:left;
+    }
+</pre>
+<img src="img/output13.png" alt="css" width="700px;"/><br>
+<pre style="background-color:#EEEFF5;">
+ div{
+        width:400px;
+        border:3px solid blue;
+        float:right;
+    }
+</pre>
+<img src="img/output14.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">CLEAR</p><br>
+1)left, 2)right, 3)both
+After adding some content on div1 the div 4 went on the side or it may overlap<br>
+<img src="img/overlap.png" alt="css" width="700px;"/><br>
+to stop this give clear:left or clear:both on div 4.<br>
+<pre style="background-color:#EEEFF5;">
+ &lt;div style="clear:left;"&gt;
+    &lt;u&gt;this is div 4.&lt;/u&gt;
+    What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+&lt;/div&gt;
+</pre>
+<img src="img/clear.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">OPACITY</p><br>
+The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:<br>
+Example:<br>
+<p style="background-color:red; opacity:0; width:50%">opacity 0</p><br>
+<p style="background-color:red; opacity:0.1; width:50%">opacity 0.1</p><br>
+<p style="background-color:red; opacity:0.2; width:50%">opacity 0.2</p><br>
+<p style="background-color:red; opacity:0.3; width:50%">opacity 0.3</p><br>
+<p style="background-color:red; opacity:0.4; width:50%">opacity 0.4</p><br>
+<p style="background-color:red; opacity:0.5; width:50%">opacity 0.5</p><br>
+<p style="background-color:red; opacity:0.6; width:50%">opacity 0.6</p><br>
+<p style="background-color:red; opacity:0.7; width:50%">opacity 0.7</p><br>
+<p style="background-color:red; opacity:0.8; width:50%">opacity 0.8</p><br>
+<p style="background-color:red; opacity:0.9; width:50%">opacity 0.9</p><br>
+<p style="background-color:red; opacity:1; width:50%">opacity 1</p><br>
+
+OPACITY IN IMAGE<br>
+opacity 0<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0"/><br>
+opacity 0.1<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.1"/><br>
+opacity 0.2<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.2"/><br>
+opacity 0.3<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.3"/><br>
+opacity 0.4<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.4"/><br>
+opacity 0.5<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.5"/><br>
+opacity 0.6<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.6"/><br>
+opacity 0.7<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.7"/><br>
+opacity 0.8<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.8"/><br>
+opacity 0.9<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:0.9"/><br>
+opacity 1<br>
+<img src="img/opc.jpg" alt="html" height="200px" width="200px" style="opacity:1"/><br>
+
+<p id='question' style="letter-spacing:3px;">BACKGROUND PROPERTY</p><br>
+1)background-color, 2)background-image, 3)background-repeat, 5)background-attachment, 6)background-position, 7)background-shorthand
+
+BACKGROUND-COLOR<br>
+<pre style="background-color:#EEEFF5;">
+background-color:green
+</pre>
+
+BACKGROUND IMAGE<br>
+<pre style="background-color:#EEEFF5;">
+body {
+  background-image: url("paper.gif");
+}
+</pre>
+
+BACKGROUND REPEAT<br>
+<pre style="background-color:#EEEFF5;">
+If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+
+To repeat an image vertically, set background-repeat: repeat-y;
+for no repeat set background-repeat:no repeat;
+
+</pre>
+
+BACKGROUND-ATTACHMENT(fixed,scroll)<br>
+<pre style="background-color:#EEEFF5;">
+background-attachment:scroll    /*the image will scroll with page*/
+background-attachment:fixed     /*the image will not scroll with page and will be fixed/
+</pre>
+
+BACKGROUND POSITION<br>
+<pre style="background-color:#EEEFF5;">
+background-position:right top;      /*left top, left bottom, right bottom*/
+</pre>
+
+BACKGROUND-SHORTHAND
+<pre style="background-color:#EEEFF5;">
+body {
+  background: url("img/opc.jpg") no-repeat right top fixed;
+}
+</pre>
+
+<p id='question' style="letter-spacing:3px;">CSS BOX MODEL</p><br>
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:<br>
+<img src="img/boxmodel.png" width="500px"/><br>
+Example:<br>
+<pre style="background-color:#EEEFF5;">
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</pre>
+
+Width and Height of an Element<br>
+In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+<br>
+Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.<br>
+<pre style="background-color:#EEEFF5;"  />
+Here is the calculation:<br>
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+</pre>
+CALCULATING WIDTH<br>
+The total width of an element should be calculated like this:<br>
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin<br>
+<br>
+CALCULATING HEIGHT<br>
+The total height of an element should be calculated like this:<br>
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin<br>
+
+<p id='question' style="letter-spacing:3px;">CSS MARGIN</p><br>
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).<br>
+1)margin-top, 2)margin-right, 3)margin-bottom, 4)margin-left, 5)margin-auto<br>
+All the margin properties can have the following values:<br>
+auto - the browser calculates the margin<br>
+length - specifies a margin in px, pt, cm, etc.<br>
+% - specifies a margin in % of the width of the containing element<br>
+inherit - specifies that the margin should be inherited from the parent element<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+div {
+          //top  //right   //bottom   //left
+    margin:200px   100px   150px      200px;
+}
+</pre>
+
+MARGIN-AUTO<br>
+You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+div {
+    margin:auto;
+    width:300px;
+    border:1px solid red;
+}
+</pre>
+Output:<br>
+<div style="margin:auto; width:300px; border:1px solid red">You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins<br>
+</div>
+
+
+<p id='question' style="letter-spacing:3px;">SHORTHAND PROPERTY</p><br>
+Giving 4 values<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+    margin: top right bottom left;
+</pre>
+Giving 3 values<br>
+<pre style="background-color:#EEEFF5;">
+    margin: top right bottom;
+  
+    Example: 25px 50px 75px;
+    Here top margin is 25px, 
+    right and left is 50px,
+    bottom is 75px.
+</pre>
+Giving 2 values<br>
+<pre style="background-color:#EEEFF5;">
+    margin: 25px 50px;
+    Here top and bottom margin is 25px,
+    right and left margin is 50px.
+</pre>
+
+Giving 1 value<br>
+<pre style="background-color:#EEEFF5;">
+    margin: 25px;
+    Here top, right, bottom, left = 25px;
+</pre>
+
+<p id='question' style="letter-spacing:3px;">PADDING</p><br>
+1)padding(left,right,bottom,top)<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+div {
+    padding:50px 100px 150px 200px;
+}
+</pre>
+
+<p id='question' style="letter-spacing:3px;">HEIGHT AND WIDTH PROPERTY</p><br>
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.<br>
+The height and width properties may have the following values:<br>
+
+auto - This is default. The browser calculates the height and width<br>
+length - Defines the height/width in px, cm etc.<br>
+% - Defines the height/width in percent of the containing block<br>
+initial - Sets the height/width to its default value<br>
+inherit - The height/width will be inherited from its parent value<br>
+<br>
+WIDTH vs MAX-WIDTH:<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+  width:500px;
+</pre>
+The problem with the width occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.<br>
+To overcome with this problem use max-width:<br>
+The max-width property is used to set the maximum width of an element.
+The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+Using max-width instead, in this situation, will improve the browser's handling of small windows.<br>
+
+<p id='question' style="letter-spacing:3px;">OUTLINE</p><br>
+Outlines differ from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.<br>
+outline(width, style, color, offset)<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+OUTLINE SHORTHAND :
+p{
+    outline:2px dotted green;
+    outline-offset: 15px;
+}
+</pre>
+Output<br>
+<p style="border:2px solid red; outline:2px dotted green; outline-offset:15px;">an example of outline with 2px red border and 2px green dotted outline. </p>
+
+<p id='question' style="letter-spacing:3px;">OVERFLOW</p><br>
+overflow(scroll,hidden,auto,visible)<br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+    div{
+          width:50%;
+          height:100px;
+          overflow:scroll;
+    }
+</pre>
+Output: Same output if we give overflow:auto<br>
+<div style="width:20%; overflow:scroll; height:100px;">The overflow property specifies what should happen if content overflows an element's box.
+
+This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+
+Note: The overflow property only works for block elements with a specified height.</div>
+
+OVERFLOW-X , OVERFLOW-Y<br>
+<pre style="background-color:#EEEFF5;">
+      overflow-x      //for horizontal scroll
+      overflow-y      //for vertical scroll
+</pre>
+
+
+<p id='question' style="letter-spacing:3px;">RESIZE</p><br>
+The resize property defines if (and how) an element is resizable by the user.<br>
+
+Note: The resize property does not apply to inline elements or to block elements where overflow="visible". So, make sure that overflow is set to "scroll", "auto", or "hidden".<br>
+none	Default value. The user cannot resize the element	<br>
+both	The user can resize both the height and width of the element	<br>
+vertical	The user can resize the height of the element	<br>
+initial	Sets this property to its default value. Read about initial	<br>
+inherit	Inherits this property from its parent element. Read about inherit<br>
+<pre style="background-color:#EEEFF5;">
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+</pre>
+Output<br>
+<div style="border:2px solid; padding:20px; width:300px; resize:both; overflow:auto;">
+none	Default value. The user cannot resize the element	<br>
+both	The user can resize both the height and width of the element	<br>
+vertical	The user can resize the height of the element	<br>
+initial	Sets this property to its default value. Read about initial	<br>
+inherit	Inherits this property from its parent element. Read about inherit<br>
+</div>
+
+
+Horizontal resize<br>
+<div style="border:2px solid; padding:20px; width:300px; resize:horizontal; overflow:auto;">
+none	Default value. The user cannot resize the element	<br>
+both	The user can resize both the height and width of the element	<br>
+vertical	The user can resize the height of the element	<br>
+initial	Sets this property to its default value. Read about initial	<br>
+inherit	Inherits this property from its parent element. Read about inherit<br>
+</div>
+
+Vertical Resize<br>
+<div style="border:2px solid; padding:20px; width:300px; resize:vertical; overflow:auto;">
+none	Default value. The user cannot resize the element	<br>
+both	The user can resize both the height and width of the element	<br>
+vertical	The user can resize the height of the element	<br>
+initial	Sets this property to its default value. Read about initial	<br>
+inherit	Inherits this property from its parent element. Read about inherit<br>
+</div>
+
+<p id='question' style="letter-spacing:3px;">WHITE-SPACE</p><br>
+The white-space property specifies how white-space inside an element is handled.<br>
+white-space(nowrap, normal, pre)
+<pre style="background-color:#EEEFF5;">
+  div{
+      width:30%;
+      white-space:nowrap;
+  }
+</pre>
+Output<br>
+<div style="width:30%; white-space:nowarp;">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</div>
+
+<div style="width:30%; white-space:normal;">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</div>
+
+<div style="width:30%; white-space:pre;">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</div>
+
+
+<p id='question' style="letter-spacing:3px;">WRITING-MODE</p><br>
+The writing-mode property specifies whether lines of text are laid out horizontally or vertically.<br>
+<pre style="background-color:#EEEFF5;">
+p1{
+    writing-mode:horizontal-tb;
+}
+p2{
+    writing-mode:vertical-rl;
+}
+</pre>
+Output:<br>
+<p style="writing-mode:horizontal-tb">Some text with default writing-mode.</p>
+<p style="writing-mode:vertical-rl">Some text with writing-mode: vertical-rl.</p>
+
+
+<p id='question' style="letter-spacing:3px;">FLEX</p><br>
+It is just layout model in css<br>
+1)display:flex | inline-flex, 2)flex-direction:row | column, 3)
+<br>
+
+display:flex<br>
+code: https://github.com/fareen341/HTML-CSS/blob/main/flex.html
+output:<br>
+<img src="img/flex.png" width="800px"/>
+<hr>
+<br>
+flex:number<br>
+Example:<br>
+<pre style="background-color:#EEEFF5;">
+  flex:2;       /*This will span the two column*/
+</pre>
+code : https://github.com/fareen341/HTML-CSS/blob/main/flex2.html<br>
+Output:<br>
+<img src="img/flex2.png" width="800px"/>
+<hr>
+flex:start | end<br>
+code :  https://github.com/fareen341/HTML-CSS/blob/main/flex3.html<br>
+Output:<br>
+<img src="img/flex3.png" width="800px"/><br>
+<img src="img/flex4.png" width="800px"/><br>
+<hr>
+flex-direction: column | row<br>
+code : https://github.com/fareen341/HTML-CSS/blob/main/flex4.html<br>
+<img src="img/flex5.png" width="800px"/><br>
+<hr>
+justify-content: start | end | center | space-between | space-around<br>
+code: https://github.com/fareen341/HTML-CSS/blob/main/flex5.html<br>
+start<br>
+<img src="img/flex6.png" width="800px"/><br>
+end<br>
+<img src="img/flex7.png" width="800px"/><br>
+center<br>
+<img src="img/flex8.png" width="800px"/><br>
+space-between<br>
+<img src="img/flex9.png" width="800px"/><br>
+space-around<br>
+<img src="img/flex10.png" width="800px"/><br>
+<hr>
+flex:basis:width in px;<br>
+This is to give width use flex:25%; .. etc for width <br>
+<hr>
+Responsive flex:<br>
+code: <br>
+Desktop view<br>
+<img src="img/flex10.png" width="800px"/><br>
+Mobile view<br>
+<img src="img/flex11.png" width="800px"/><br>
+
+
+
+
+
+
+<p id='question' style="letter-spacing:3px;">DISPLAY</p><br>
+left-right-top-bottom will not work only on display:static, rest on all it works.<br>
+1)display(none,inline,block,inline-block,flex,grid)<br>
+display none<br>
+it disapper the block.<br>
+Example<br>
+<p style="display:none">display none</p>
+<br>
+display-block<br>
+This will make the inline element to block level<br>
+Example: span tag is inline but after making it block level it will cover the whole width just like block level element<br>
+before display:block:<br>
+This is <span style="color:red;">diplay:block</span> property<br>
+
+after:<br>
+This is <span style="color:red; display:block; border-style:solid;">diplay:block</span> property
+<br><br>
+display:inline<br>
+To make the block level elemet to inline.<br>
+before display:inline:<br>
+<h1 style="border-style:solid;">solid h1 tag</h1>
+after dispaly:inline:<br>
+<h1 style="border-style:solid; display:inline;">solid h1 tag</h1>
+<br>
+display:inherit<br>
+To give parent property to child<br>
+Example: span is the child of p tag here, to make span take the parent(p tag) property use inherit<br>
+<pre style="background-color:#EEEFF5;">
+p span{
+      display:inherit;        /*Here p is parent who have display block to make span take the parent property use display:inherit.*/
+}
+</pre>
+Output:<br>
+<p>This is <span style="display:inherit; border:solid;">display:inherit;</span>property</p>
+
+
+<p id='question' style="letter-spacing:3px;">USER SELECT</p><br>
+<p id='question' style="letter-spacing:3px;">CURSOR</p><br>
+
+ <p id='question' style="letter-spacing:3px; text-transform:uppercase;">Background gradient</p>
+ Background-gradient is used to display smooth transition between two or more colors.<br>
+
+There are two types of gradient.Liner and radial<br>
+Linear-gradient<br>
+<pre style="background-color:#EEEFF5;">
+.grad{
+      height:300px;
+      background:liner-gradient(red,yellow);
+}
+</pre>
+Output<br>
+<img src="img/grad2.png" /><br>
+
+Direction atribute is given as follows:<br>
+<img src="img/grad.png" /><br>
+
+To right<br>
+<pre style="background-color:#EEEFF5;">
+.grad{
+      height:300px;
+      background:liner-gradient(to right,red,yellow);
+}
+</pre>
+Output:<br>
+<img src="img/grad3.png" /><br>
+
+
+
+Radial-Gradient<br>
+In radial gradient color transition starts from the center.<br>
+<pre style="background-color:#EEEFF5;">
+.grad{
+      height:300px;
+      background:radial-gradient(red,yellow);
+}
+</pre>
+Output:<br>
+<img src="img/grad4.png" /><br>
+By default, radial-gradients have an elliptical shape. It can be seen that it starts with the red color from the center of the ellipse and ends with the yellow color outward.
+
+<br>
+Circle shape<br>
+<pre style="background-color:#EEEFF5;">
+.grad{
+      height:300px;
+      background:radial-gradient(circle,red,yellow);
+}
+</pre>
+Output:<br>
+<img src="img/grad5.png" /><br>
+
+Circle shape<br>
+In order to see it more precisely ,we can add a percentage to the colors as shown below.<br>
+<pre style="background-color:#EEEFF5;">
+.grad{
+      height:300px;
+      background:radial-gradient(circle,red,yellow 55%);
+}
+</pre>
+Output:<br>
+<img src="img/grad6.png" /><br>
+
+With some opacity<br>
+.grad{
+      height:300px;
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+</pre>
+
+ <p id='question' style="letter-spacing:3px; text-transform:uppercase;">Transform properties</p>
+Scaling():<br>
+This  function increases or decreases the size of the element.<br>
+1)scaleX(n) Change the dimension of the element in X-direction<br>
+
+2)scaleY(n) Change the dimension of the element in Y-direction.<br>
+
+3)scale(n) Change the dimension of the element in Both the Direction.<br>
+n can be a whole number or fractional value.<br>
+<br>
+scaleX()<br>
+<pre style="background-color:#EEEFF5;">
+.tran{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scaleX(1.5);
+}
+</pre>
+Before transformation:<br>
+<div class="tran" style="transform:none;"></div><br>
+Output: scaleX() function increases the dimension width by 1.5 times of its original width.<br>
+<div class="tran"></div><br>
+
+scaleY()<br>
+<pre style="background-color:#EEEFF5;">
+.trany{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scaleY(1.5);
+}
+</pre>
+Before transformation:<br>
+<div class="trany" style="transform:none;"></div><br>
+Output: scaleY() function increases the dimension height by 1.5 times of its original height.<br><br><br><br>
+<div class="trany"></div><br><br>
+<br>
+
+Scale()<br>
+<pre style="background-color:#EEEFF5;">
+This will transform change both height and width to 1.5<br>
+.tranxy{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+
+    /*transformation property*/
+    transform:scale(1.5);
+}
+</pre>
+Before transformation:<br>
+<div class="tranxy" style="transform:none;"></div><br><br><br><br>
+After:<br>
+<div class="tranxy"></div><br><br>
+<br>
+
+Transformation with hover :<br>
+https://github.com/fareen341/HTML-CSS/blob/main/transformation.html<br>
+
+<hr>
+ROTATE<br>
+rotate()<br>
+This function rotates the element according to the degree of rotation given.<br>
+This function can be written in three ways:<br>
+1)rotateX(n deg)  : Rotate the element along x axis<br>
+
+2)rotateY(n deg) : Rotate the element along y axis.<br>
+
+3)rotate(n deg)  : Rotate the element  with respect to both the axes.<br>
+<hr>
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">Transition Properties</p>
+rotate(45deg)<br>
+<pre style="background-color:#EEEFF5;">
+.tran1{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:3s;
+    
+}
+.tran1:hover{
+    transform:rotate(45deg);
+}
+</pre>
+<div class="tran1"></div>
+<hr>
+rotateY(180)<br>
+<pre style="background-color:#EEEFF5;">
+.tran2{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:3s;
+    
+}
+.tran2:hover{
+    transform:rotateY(180deg);
+}
+</pre>
+Output:<br>
+<div class="tran2"></div>
+<br>
+Use transition delay:2s for the in the .tran2 to make the transition delay 2 sec.<br>
+<hr>
+rotateX(180)<br>
+<pre style="background-color:#EEEFF5;">
+.tran3{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    transition-property:transform;
+    transition-duration:3s;
+    
+}
+.tran3:hover{
+    transform:rotateY(180deg);
+}
+</pre>
+Output:<br>
+<div class="tran3"></div>
+<hr>
+Transition shorthand property:<br>
+<pre style="background-color:#EEEFF5;">
+    transition:transform 3s 2s;
+                
+               : transformation, duration, delay
+                
+</pre>
+
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">Keyframe animation</p>
+By defining the keyframes rule we can have a better control over the intermediate state between initial state and final state  of the entire animation.<br>
+Syntax:<br>
+@keyframes animation_name{<br>
+Rules definition<br>
+}<br>
+<br>
+CSS animation can be applied on HTML element in two step:
+
+Step 1: Defining Keyframes animation Rules and naming the animation
+
+Step 2: Targeting animation  that is defined in the keyframe with the help of 
+
+                animation property.
+
+<br>
+Css animation property:<br>
+1)animation-name : Name of the animation defined in Keyframes<br>
+2)animation-duration : Time taken by animation to complete one complete phase(cycle).<br>
+3)animation-delay : Time taken before starting animation<br>
+4)animation-iteration-count : Specify the number of times animation to be repeated. For continuous animation value is infinite<br>
+
+CSS animation can be applied on HTML element in two step:<br>
+Step 1: Defining Keyframes animation Rules and naming the animation<br>
+Step 2: Targeting animation  that is defined in the keyframe with the help of<br> 
+<br>
+changing color of the Box using css animation.<br>
+<pre style="background-color:#EEEFF5;">
+.tran4{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    animation-name:myanime;
+    animation-duration:5s;
+    
+}
+@keyframes myanime{
+    from{background-color:red;}
+    to{background-color:blue;}
+}
+</pre>
+<div class="tran4" >
+Hello
+</div>
+<hr>
+We can display animation by using percentage values in the Keyframes animation.<br>
+<pre style="background-color:#EEEFF5;">
+.tran5{
+    margin:auto;
+    width:30%;
+    border-style:solid;
+    height:300px;  
+    box-sizing:border-box;
+    text-align:center;
+    animation-name:myanime2;
+    animation-duration:10s;
+    
+}
+@keyframes myanime2{
+    25%{background-color:red;}
+    50%{background-color:blue;}
+    75%{background-color:green;}
+    100%{background-color:black;}
+}
+</pre>
+<div class="tran5"></div><br>
+Total duration of the animation is 8 sec.<br>
+
+25% means(from 0% to 25%) 2 sec taken to complete animation from background-color:red to background-color:blue.
+
+50% means (from 25% to 50%), 2 sec taken to complete the animation from background-color:blue to background-color:green and so on.<br>
+
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">layout in css(position)</p>
+1)static, 2)relative, 3)fixed,  4)absolute<br>
+static<br>
+this is the default position of the web page.<br>
+left,right,top,bottom does not work in this layout<br>
+<hr>
+relative<br>
+in this we can use top,left,right,bottom<br>
+<pre style="background-color:#EEEFF5;">
+  .pos{
+      position:relative:
+      top:-30px;
+  }
+</pre>
+Output<br>
+<p style="position:relative; top:-30px; border-style:solid;">This is relative layout</p>
+Here the p tag is top -50 meaning, the border will move top -30px from its actual position<br>
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">Box-shadow</p>
+property values:<br>
+1)none: Default value. No shadow is displayed<br>
+2)h-offset: Required. The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box<br>
+3)v-offset: Required. The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box<br>
+4)blur: Optional. The blur radius. The higher the number, the more blurred the shadow will be<br>
+5)spread:	Optional. The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow<br>
+6)color: Optional. The color of the shadow. The default value is the text color. Look at CSS Color Values for a complete list of possible color values.<br>
+7)inset: 	Optional. Changes the shadow from an outer shadow (outset) to an inner shadow<br>
+8)initial<br>
+9)inherit<br>
+
+<pre style="background-color:#EEEFF5;">
+    blur:
+      h-offset v-offset blur 
+        box-shadow: 5px 10px 10px;
+</pre>
+<pre style="background-color:#EEEFF5;">
+      spread:
+        h-offset v-offset blur spread 
+        box-shadow: 5px 10px 10px 10px;
+</pre>
+
+<pre style="background-color:#EEEFF5;">
+        color:
+          h-offset v-offset blur spread color 
+          box-shadow: 5px 10px 10px 10px green;
+</pre>
+
+<pre style="background-color:#EEEFF5;">
+        inset:
+            shadow inside the box: using 
+            h-offset v-offset blur spread color inset 
+            box-shadow: 5px 10px 10px 10px green inset;
+</pre>
+Output<br>
+<p style="border:1px solid; box-shadow:5px 10px 10px 10px green inset; height:100px;">h-offset v-offset blur spread color inset </p>
+
+</div>
+</div>
+<br>
+
+
+
+
+ <!--grid-->
+ <div class="righttxt" style="border-style: double; padding:20px;">
+ <h2 id="grid" style="text-align:center;">GRID SYSTEM IN CSS</h2>
+
+<pre style="background-color:#EEEFF5;">
+<u>style.css</u><br>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+OR instead of writing the .grid-item again and again in the index.html use child selector<br>
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+<br>
+By using this way we just have to write only div as in &lt;div&lt;content&lt;/div&gt;<br>
+
+
+<u>index.html</u><br>
+&lt;div class="grid-container"&gt;
+  &lt;div class="grid-item"&gt;1&lt;/div&gt;
+  &lt;div class="grid-item"&gt;2&lt;/div&gt;
+  &lt;div class="grid-item"&gt;3&lt;/div&gt;  
+  &lt;div class="grid-item"&gt;4&lt;/div&gt;
+  &lt;div class="grid-item"&gt;5&lt;/div&gt;
+  &lt;div class="grid-item"&gt;6&lt;/div&gt;  
+  &lt;div class="grid-item"&gt;7&lt;/div&gt;
+  &lt;div class="grid-item"&gt;8&lt;/div&gt;
+  &lt;div class="grid-item"&gt;9&lt;/div&gt;  
+&lt;/div&gt;
+</pre> 
+Output:<br>
+<img src="img/grid1.png" alt="css" width="700px;"/><br>
+Here 1,2,3 is the column, 147 is the row.<br>
+We can specify the gap between them using grid-gap<br>
+Properties of grid<br>
+<table class="ws-table-all notranslate" border="1">
+  <tbody><tr>
+    <th style="width:30%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_column-gap.asp">column-gap</a></td>
+    <td>Specifies the gap between the columns</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_gap.asp">gap</a></td>
+    <td>A shorthand property for the <em>row-gap</em> and the <em>column-gap</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid.asp">grid</a></td>
+    <td>A shorthand property for the <em>grid-template-rows, 
+    grid-template-columns, grid-template-areas, grid-auto-rows, 
+    grid-auto-columns</em>, and the <em>grid-auto-flow</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-area.asp">grid-area</a></td>
+    <td>Either specifies a name for the grid item, or this property is a shorthand property for the <em>grid-row-start</em>, <em>grid-column-start</em>, <em>grid-row-end</em>, and <em>grid-column-end</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-auto-columns.asp">grid-auto-columns</a></td>
+    <td>Specifies a default column size</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-auto-flow.asp">grid-auto-flow</a></td>
+    <td>Specifies how auto-placed items are inserted in the grid</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-auto-rows.asp">grid-auto-rows</a></td>
+    <td>Specifies a default row size</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-column.asp">grid-column</a></td>
+    <td>A shorthand property for the <em>grid-column-start</em> and the <em>grid-column-end</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-column-end.asp">grid-column-end</a></td>
+    <td>Specifies where to end the grid item</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-column-gap.asp">grid-column-gap</a></td>
+    <td>Specifies the size of the gap between columns</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-column-start.asp">grid-column-start</a></td>
+    <td>Specifies where to start the grid item</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-gap.asp">grid-gap</a></td>
+    <td>A shorthand property for the <em>grid-row-gap</em> and <em>grid-column-gap</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-row.asp">grid-row</a></td>
+    <td>A shorthand property for the <em>grid-row-start</em> and the <em>grid-row-end</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-row-end.asp">grid-row-end</a></td>
+    <td>Specifies where to end the grid item</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-row-gap.asp">grid-row-gap</a></td>
+    <td>Specifies the size of the gap between rows</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-row-start.asp">grid-row-start</a></td>
+    <td>Specifies where to start the grid item</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-template.asp">grid-template</a></td>
+    <td>A shorthand property for the <em>grid-template-rows</em>, <em>grid-template-columns</em> 
+    and <em>grid-areas</em> properties</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-template-areas.asp">grid-template-areas</a></td>
+    <td>Specifies how to display columns and rows, using named grid items</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-template-columns.asp">grid-template-columns</a></td>
+    <td>Specifies the size of the columns, and how many columns in a grid layout</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_grid-template-rows.asp">grid-template-rows</a></td>
+    <td>Specifies the size of the rows in a grid layout</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_row-gap.asp">row-gap</a></td>
+    <td>Specifies the gap between the grid rows</td>
+  </tr>
+</tbody></table><br>
+
+<p id='question' style="letter-spacing:3px;">DISPLAY PROPERTY:</p><br>
+An HTML element becomes a grid container when its display property is set to grid or inline-grid.<br>
+
+<p id='question' style="letter-spacing:3px;">GRID GAP</p><br>
+GRID COLUMN GAP<br>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+    grid-column-gap: 50px;
+}
+</pre>
+<img src="img/grid2.png" alt="css" width="700px;"/><br>
+
+GRID ROW GAP<br>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+    grid-row-gap: 50px;
+}
+</pre>
+<img src="img/grid3.png" alt="css" width="700px;"/><br>
+
+GRID GAP(BOTH ROW AND COLUMN)<br>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+              row  col
+    grid-gap: 50px 100px;
+}
+      OR
+.grid-container{
+    grid-gap: 50px;  //for both row and col. 
+}    
+</pre>
+<img src="img/grid4.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">GRID-TEMPLATE-COLUMNS</p>
+The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
+The value is a space-separated-list, where each value defines the width of the respective column.
+If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the same width.<br>
+
+Of same size<br>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+                        //no. of cols..
+    grid-template-column: auto auto auto auto;
+}
+</pre>
+This will create 4 cols of same size<br>
+
+Of different size<br>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+                        //no. of cols..
+    grid-template-columns: 80px 200px auto 30px;
+}
+</pre>
+This will create 4 cols of same size<br>
+<img src="img/grid5.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">GRID-TEMPLATE-ROWS</p>
+<pre style="background-color:#EEEFF5;">
+.grid-container{
+
+    grid-template-columns:auto auto auto;
+                        //no. of rows..
+    grid-template-columns: 80px 200px;
+}
+</pre>
+<img src="img/grid6.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">JUSTIFY-CONTENT</p>
+Use the justify-content property to align the grid inside the container.<br>
+<pre style="background-color:#EEEFF5;">
+The value "space-evenly" will give the columns equal amount of space between, and around them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    justify-content:space-evenly;
+}
+</pre>
+<img src="img/grid7.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "space-around" will give the columns equal amount of space around them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    justify-content:space-around;
+}
+</pre>
+<img src="img/grid8.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "space-between" will give the columns equal amount of space between them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    justify-content: space-between;
+}
+</pre>
+<img src="img/grid9.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "center" will align the grid in the middle of the container:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    justify-content: space-center;
+}
+</pre>
+<img src="img/grid10.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "start" will align the grid at the beginning of the container:
+The value "end" will align the grid at the end of the container:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    justify-content: start;
+    justify-content: end;
+}
+</pre>
+
+
+<p id='question' style="letter-spacing:3px;">ALIGN-CONTENT</p>
+Use the align-content property to vertically align the grid inside the container.<br>
+<pre style="background-color:#EEEFF5;">
+The value "space-evenly" will give the rows equal amount of space between, and around them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    align-content: space-evenly;
+}
+</pre>
+<img src="img/grid11.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "space-around" will give the rows equal amount of space around them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    align-content: space-around;
+}
+</pre>
+<img src="img/grid12.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "space-between" will give the rows equal amount of space between them:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    align-content: space-between;
+}
+</pre>
+<img src="img/grid13.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "center" will align the rows in the middle of the container:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    align-content: space-center;
+}
+</pre>
+<img src="img/grid14.png" alt="css" width="700px;"/><br>
+
+<pre style="background-color:#EEEFF5;">
+The value "start" will align the rows at the beginning of the container:
+The value "end" will align the rows at the end of the container:
+
+.grid-container{
+    grid-template-columns:50px 50px 50px;
+    align-content: start;
+    align-content: end;
+}
+</pre>
+
+
+<p id='question' style="letter-spacing:3px;">GRID-COLUMN</p>
+Use the grid-column property to specify where to place an item.<br>
+<pre style="background-color:#EEEFF5;">
+Item1 will start on column 1 and end before column 5(5-1=4) start at 1 and end at 4:
+
+<u>style.css</u>
+.grid-container{
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.item1 {
+  grid-column: 1 / 5;     //start at 1 ends at (5-1=4) 4.
+}
+
+<u>index.html</u>
+&lt;div class="grid-container"&gt;
+  &lt;div class="item1">1&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<img src="img/grid15.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">GRID-ROW</p>
+<pre style="background-color:#EEEFF5;">
+Item1 will start on row-line 1 and end on row-line 4:
+
+<u>style.css</u>
+.grid-container{
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.item1 {
+  grid-row: 1 / 4;     //start at 1 ends at (4-1=3) 3.
+}
+
+<u>index.html</u>
+&lt;div class="grid-container"&gt;
+  &lt;div class="item1">1&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<img src="img/grid16.png" alt="css" width="700px;"/><br>
+
+<p id='question' style="letter-spacing:3px;">GRID-AREA</p>
+<pre style="background-color:#EEEFF5;">
+Item1 will start on row-line 1 and end on row-line 4:
+
+<u>style.css</u>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+<u>index.html</u>
+&lt;div class="grid-container"&gt;
+  &lt;div class="item1"&gt;Header&lt;/div&gt;
+  &lt;div class="item2"&gt;Menu&lt;/div&gt;
+  &lt;div class="item3"&gt;Main&lt;/div&gt;  
+  &lt;div class="item4"&gt;Right&lt;/div&gt;
+  &lt;div class="item5"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<img src="img/grid17.png" alt="css" width="700px;"/><br>
+</div>
+<br>
+
+ <div class="righttxt" style="border-style: double; padding:20px;">
+ <h2 id="media query" style="text-align:center;">MEDIA QUERY IN CSS</h2>
+CSS2 Introduced Media Types<br>
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.<br>
+
+Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.<br>
+
+Unfortunately these media types never got a lot of support by devices, other than the print media type.<br>
+
+CSS3 Introduced Media Queries<br><br>
+Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.<br>
+
+Media queries can be used to check many things, such as:<br>
+
+1)width and height of the viewport<br>
+2)width and height of the device<br>
+3)orientation (is the tablet/phone in landscape or portrait mode?)<br>
+4)resolution<br>
+Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).<br>
+Syntax:<br>
+<pre style="background-color:#EEEFF5;">
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+</pre>
+CSS3 Media Types<br>
+<table class="ws-table-all notranslate" border="1">
+  <tbody><tr>
+    <th style="width:25%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>all</td>
+    <td>Used for all media type devices</td>
+  </tr>
+  <tr>
+    <td>print</td>
+    <td>Used for printers</td>
+  </tr>
+    <tr>
+    <td>screen</td>
+    <td>Used for computer screens, tablets, smart-phones etc.</td>
+    </tr>
+  <tr>
+    <td>speech</td>
+    <td>Used for screenreaders that "reads" the page out loud</td>
+  </tr>
+</tbody></table><br>
+Example<br>
+<pre style="background-color:#EEEFF5;">
+body {
+  background-color: pink;         //this is the default value, if the screen size is less than 992px or less the body color will change to lightgreen.
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+</pre>
+max-width: 992px meaning is if the screen size is 992 and less the given property will be applied.<br>
+min-width: 992px meaning is if the screen size is 992 and greater the given property will be applied.<br>
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">Always Design for Mobile First</p>
+Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).<br>
+This means that we must make some changes in our CSS.<br>
+Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px. This will make our design Mobile First:<br>
+Example:<br>
+<pre style="background-color:#EEEFF5;">
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  width:25%;
+}
+Here if the screen size is 768 or greater the width:25% property will be applied, else it will be 100%.
+</pre>
+
+<p id='question' style="letter-spacing:3px; text-transform:uppercase;">for mobile, tablet, desktop</p>
+<pre style="background-color:#EEEFF5;">
+/*for mobile*/
+body {
+  background-color: pink;
+}
+
+/*for tab*/
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/*for desktop*/
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+</pre>
+Here the default is mobile meaning if the screen size is less than 600px the body color will be pink, if the screen size is between 600 and 768 the color will be lightgreen, if the size is 768 and greater the color will be lightblue<br>
+
+</div>
+<br>
+
+<!--extra link-->
+<div class="righttxt" style="border-style: double; padding:20px;">
+<h2 id="elinks" style="text-align:center;">EXTRA LINKS</h2>
+<p id='question' style="letter-spacing:3px;">To embedded a map in browser use:</p>
+https://www.embedgooglemap.net/<br><br>
+
+<p id='question' style="letter-spacing:3px;">To get wave for the design use:</p>
+https://getwaves.io/<br><br>
+
+<p id='question' style="letter-spacing:3px;">To write over an image use:</p>
+https://www.visualwatermark.com/add-text-to-photos/<br><br>
+
+<p id='question' style="letter-spacing:3px;">To get line through on the text of the image:</p>
+https://saijogeorge.com/strikethrough-text-generator/<br><br>
+
+<p id='question' style="letter-spacing:3px;">Add whatsapp api:</p>
+https://codepen.io/demoonkevin/pen/MvPEpV<br><br>
+</div>
+<br>
+
+
+<!--BOOTSTRAP-->
+<div class="righttxt" style="border-style: double; padding:20px;">
+  <h2 id="elinks" style="text-align:center;">BOOTSTRAP</h2>
+  Bootstrap is compiled CSS it contains pre defind classes, js.<br>
+  <p id='question' style="letter-spacing:3px;">RFS(RESPONSIVE FONT SIZE)</p>
+  This can be included using bootstrap's scss<br>
+  This will make the font responsive on different screen width<br>
+  Example:
+  <pre style="background-color:#EEEFF5;">
+      h1{
+        @include font-size(4rem);
+      }
+
+      This will make font responsive.
+  </pre>
+<br>
+<p id='question' style="letter-spacing:3px;">GRID</p>
+Grid size in different screen, and boostrap is mobile first.<br>
+<pre style="background-color:#EEEFF5;">
+  $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+</pre>
+<br>
+<p id='question' style="letter-spacing:3px;">container class</p>
+<table class="table">
+  <thead>
+    <tr>
+      <td class="border-dark"></td>
+      <th scope="col">
+        Extra small<br>
+        <span class="fw-normal">&lt;576px</span>
+      </th>
+      <th scope="col">
+        Small<br>
+        <span class="fw-normal">≥576px</span>
+      </th>
+      <th scope="col">
+        Medium<br>
+        <span class="fw-normal">≥768px</span>
+      </th>
+      <th scope="col">
+        Large<br>
+        <span class="fw-normal">≥992px</span>
+      </th>
+      <th scope="col">
+        X-Large<br>
+        <span class="fw-normal">≥1200px</span>
+      </th>
+      <th scope="col">
+        XX-Large<br>
+        <span class="fw-normal">≥1400px</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container</code></th>
+      <td class="text-muted">100%</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-sm</code></th>
+      <td class="text-muted">100%</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-md</code></th>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-lg</code></th>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>960px</td>
+      <td>1140px</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-xl</code></th>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>1140px</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-xxl</code></th>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>1320px</td>
+    </tr>
+    <tr>
+      <th scope="row" class="fw-normal"><code>.container-fluid</code></th>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+    </tr>
+  </tbody>
+</table>
+Here the .container changes with every screen, whereas the last .container-fluid will be 100% on every device<br>
+<br>
+If we give container md the size will get full width until the md<br>
+Meaning there will be space on left,right when the screen reaches md the width will changed to 100%.<br><br>
+ 
+THIS WORKS ON THE 12 GRID SYSTEM:<br>
+we can have 12 grid column in a row<br>
+If we take 2 cols of 6 span we'll get 2 cols of space width<br>
+Example:<br>
+<pre style="background-color:#EEEFF5;">
+  &lt;div class="col-md-4 col-sm-6"&gt;1&lt;/div&gt;
+  &lt;div class="col-md-4 col-sm-6"&gt;2&lt;/div&gt;
+      if the width is 576 or greater than appliy that condition
+      meaning if we also specify md the given condition will go from 576 to 767 the both col will be col-sm-6 only
+      So from 0 to 575(xs wil be apply).
+      from 576 to 767(sm will apply).           @media screen and (min-width: 576)   //meaning if the screen size is equal or greater than 576 apply the given condition >=576.
+      from 768 to 991(md will be apply).	      @media screen and (min-width: 768)
+      from 992 to 1199(lg will be apply).	      @media screen and (min-width: 992)
+      from 1200 to 1399(xl will be apply).      @media screen and (min-width: 1200)
+      and from 1400 to end(xxl will be apply).  @media screen and (min-width: 1400)
+
+      Youtube link: https://youtu.be/cHAcSQyvBqQ
+</pre>
+
+<p id='question' style="letter-spacing:3px;">JUSTIFY CONTENT</p>
+<pre style="background-color:#EEEFF5;">
+Use col-{breakpoint}-auto classes to size columns based on the natural width of their content.
+
+    &lt;div class="row justify-content-md-start"&gt;
+
+    start will start from left, this is default.
+    end will start from end.
+    center will start from center.
+    evenly, between, around.
+</pre>
+ 
+<p id='question' style="letter-spacing:3px;">GIVING COL SIZE AT ROW LEVEL</p>
+if we take only one col it will take entire width.<br>
+<pre style="background-color:#EEEFF5;">
+Here on xs the width will be 100%, 2 cols in sm and 4 cols on md and above.
+    &lt;div class="container"&gt;
+      &lt;div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"&gt;
+      &lt;div class="col"&gt;&lt;Column&lt;/div&gt;
+      &lt;div class="col"&gt;&lt;Column&lt;/div&gt;
+      &lt;div class="col"&gt;&lt;Column&lt;/div&gt;
+      &lt;div class="col"&gt;&lt;Column&lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+
+<p id='question' style="letter-spacing:3px;">NESTING</p>
+<pre style="background-color:#EEEFF5;">
+Here there is 2 cols of sm-3 and sm-9, sm-9 is further nested with 2 cols of sm-6.
+    &LT;div class="container"&gt;
+      &LT;div class="row"&gt;
+        &LT;div class="col-sm-3"&gt;
+          Level 1: .col-sm-3
+        &LT;/div&gt;
+      &LT;div class="col-sm-9"&gt;
+        &LT;div class="row"&gt;
+          &LT;div class="col-8 col-sm-6"&gt;
+            Level 2: .col-8 .col-sm-6
+          &LT;/div&gt;
+          &LT;div class="col-4 col-sm-6"&gt;
+            Level 2: .col-4 .col-sm-6
+            &LT;/div&gt;
+          &LT;/div&gt;
+        &LT;/div&gt;
+      &LT;/div&gt;
+  &LT;/div&gt;
+</pre>
+
+
+<p id='question' style="letter-spacing:3px;">COLUMN ALIGNMENT</p>
+if we give col-6, col-7 then the col-7 column will shifted to below cuz total of both is not 12.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;div class="container"&gt;
+    &lt;div class="row align-items-start"&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-center"&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-end"&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+          One of three columns
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+Output:<br>
+<img src="img/col-align.png" height="800px" width="600px"/>
+<br>
+
+<p id='question' style="letter-spacing:3px;">MIXED(SMALL, MEDIUM, LARGE DEVICE)</p>
+<pre>
+   &lt;div class="container" style="border: 1px solid;"&gt;
+        &lt;div class="row align-items-end"&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;h1>Hello&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;h1>Hello&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;h1>Hello&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;h1>Hello&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+
+<p id='question' style="letter-spacing:3px;">COLUMN BREAK</p>
+<pre style="background-color:#EEEFF5;">
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+          &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+
+          <!-- Force next columns to break to new line -->
+          &lt;div class="w-100"&gt;&lt;/div&gt;
+
+          &lt;div class="col-6 col-sm-3">&gt;.col-6 .col-sm-3&lt;/div&gt;
+          &lt;div class="col-6 col-sm-3">&gt;.col-6 .col-sm-3&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+</pre>
+Output:<br>
+<img src="img/col-break.png" height="100px" width="900px"/>
+<br>
+<p id='question' style="letter-spacing:3px;">GUTTER</p>
+It is used to give space between grids, <b>gx-</b> for horizontal space and <b>gy-</b> for vertical space and <b>g-</b> for both space. For no space use <b>g-0</b><br>
+<pre style="background-color:#EEEFF5;">
+    &lt;div class="container overflow-hidden"&gt;
+      &lt;div class="row gx-6 gy-5"&gt;
+        &lt;div class="col-6"&gt;
+        &lt;div class="p-3 border bg-light"&lt;Custom column padding&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6"&gt;
+          &lt;div class="p-3 border bg-light"&lt;Custom column padding&lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="col-6"&gt;
+        &lt;div class="p-3 border bg-light"&lt;Custom column padding&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6"&gt;
+          &lt;div class="p-3 border bg-light"&lt;Custom column padding&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+Output:<br>
+Here p-3 is padding given<br>
+<img src="img/gutter.png" height="100px" width="900px"/>
+<p id='question' style="letter-spacing:3px;">TYPOGRAPHY</p>
+Faded text using class="text-muted";<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;h3&gt;
+      Fancy display heading
+      &lt;small class="text-muted">With faded secondary text&lt;/small&gt;
+    &lt;/h3&gt;
+</pre>
+Output:<br>
+<h3>
+  Fancy display heading
+  <small class="text-muted">With faded secondary text</small>
+</h3>
+<br>
+<h2>DISPLAY</h2><br>
+Just like h1,h2...h6, We can use display class, class="display-1"<br>
+Example:<br>
+<p class="display-1">Display-1</p><br><br>
+<h2>LEAD</h2><br>
+Make a paragraph stand out by adding class="lead".<br>
+<p class="lead">This is lead class inside paragraph.</p><br><br>
+
+<h2>TEXT-HIGHLIGHT</h2><br>
+Using mark tag:<br>
+<pre style="background-color:#EEEFF5;">
+  &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+</pre>
+<p>You can use the mark tag to <mark>highlight</mark> text.</p><br><br>
+
+<h2>TEXT-ALIGN</h2><br>
+<pre style="background-color:#EEEFF5;">
+    &lt;p class="text-center"&gt;This is centered text.&lt;/p&gt;
+    &lt;p class="text-end"&gt;This is centered text.&lt;/p&gt;
+</pre>
+<p class="text-center">This is centered text.</p>
+<p class="text-end">This is end text.</p><br>
+
+<p id='question' style="letter-spacing:3px;">IMAGE</p>
+<h3>RESPONSIVE IMAGE</h3>
+Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent element.<br>
+<pre style="background-color:#EEEFF5;">
+      syntax:
+      &lt;img src="..." class="img-fluid" alt="..."&gt;
+</pre><br>
+
+In this example if we dont give image responsive the image will take the full width<br>
+<pre>
+    &lt;div class="container" style="border: 1px solid;"&gt;
+        &lt;div class="row align-items-end"&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;img src="xyz.jpg" class="img-fluid"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;img src="xyz.jpg" class="img-fluid"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;img src="xyz.jpg" class="img-fluid"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;
+               &lt;img src="xyz.jpg" class="img-fluid"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+Now according to screen breakpoint given the image will change the size<br>
+
+<h3>IMAGE THUMBNAILS</h3>
+In addition to our border-radius utilities, you can use .img-thumbnail to give an image a rounded 1px border appearance.<br>
+<pre style="background-color:#EEEFF5;">
+    &lt;img src="..." class="img-thumbnail" alt="..."&gt;
+</pre><br>
+
+<h3>ALIGNING IMAGE </h3>
+Left, Right align<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;div class="container"&gt;
+          &lt;img src="img/res.jpg" class="rounded float-start" alt="..." height="200px" width="200"&gt;
+          &lt;img src="img/res.jpg" class="rounded float-end" alt="..." height="200px" width="200"&gt;
+      &lt;/div&gt;
+</pre>
+Output:<br>
+<img src="img/res-op.png" alt="..." height="200px" width="800">
+<br>
+Center Align<br>
+<pre style="background-color:#EEEFF5;">
+      &lt;img src="..." class="rounded mx-auto d-block" alt="..."&gt;
+
+      Here margin=auto, d-block=display:block
+</pre>
+<br>
+
+<p id='question' style="letter-spacing:3px;">TABLE</p>
+For table, hover table, responsive table, border table, active table etc use:
+<br>https://getbootstrap.com/docs/5.0/content/tables/<br>
+
+<p id='question' style="letter-spacing:3px;">FIGURE</p>
+<pre style="background-color:#EEEFF5;">
+      &lt;figure class="figure"&gt;
+        &lt;img src="..." class="figure-img img-fluid rounded" alt="..."&gt;
+        &lt;figcaption class="figure-caption">A caption for the above image.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+
+      We can align the captiopn of the figure, for start class="figure-caption text-end"
+</pre>
+
+<p id='question' style="letter-spacing:3px;">PADDING,MARGIN</p>
+We use p=padding and m=margin.<br>
+t=top, b=bottom, s=left, e=right, x=left+right, y=top+bottom<br>
+it can be in 0-5 range or auto.<br>
+<br>
+Padding example:
+<pre style="background-color:#EEEFF5;">
+      &lt;div class="container pt-5 pb-5 ps-5 pe-5"&gt;
+            Lorem ipsum is a name for a common type of placeholder text.
+      &lt;/div&gt;
+</pre>
+Output:<br>
+<div class="container pt-5 pb-5 ps-5 pe-5" style="border:1px solid;">
+      Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. It's essentially nonsense text, but gives an idea of what real words will look like in the final product.
+</div>
+<br>
+Margin Example:
+<pre style="background-color:#EEEFF5;">
+      &lt;div class="container ms-1"&gt;
+            Lorem ipsum is a name for a common type of placeholder text.
+      &lt;/div&gt;
+</pre>
+Output:<br>
+Margin start(left):<br>
+<div class="container ms-5" style="border:1px solid;">
+      Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. It's essentially nonsense text, but gives an idea of what real words will look like in the final product.
+</div>
+<br>
+Margin end(right):<br>
+<div class="container me-5" style="border:1px solid;">
+      Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. It's essentially nonsense text, but gives an idea of what real words will look like in the final product.
+</div>
+<br>
+Margin at different value, Margin start(left):<br>
+ms=1:<br>
+<div class="container ms-1" style="border:1px solid;">
+     Lorem ipsum is a name for a common type of placeholder text.
+</div>
+ms=2:<br>
+<div class="container ms-2" style="border:1px solid;">
+     Lorem ipsum is a name for a common type of placeholder text.
+</div>
+ms=3:<br>
+<div class="container ms-3" style="border:1px solid;">
+     Lorem ipsum is a name for a common type of placeholder text.
+</div>
+ms=4:<br>
+<div class="container ms-4" style="border:1px solid;">
+     Lorem ipsum is a name for a common type of placeholder text.
+</div>
+ms=5:<br>
+<div class="container ms-5" style="border:1px solid;">
+     Lorem ipsum is a name for a common type of placeholder text.
+</div>
+<br>
+<br>
+
+<p id='question' style="letter-spacing:3px;">FLEX</p>
+https://getbootstrap.com/docs/5.0/utilities/flex/<br>
+
+<p id='question' style="letter-spacing:3px;">ICON</p>
+<pre>
+Step 1: copy the CDN from bootstrap 
+
+Step 2:Copy and paste the icon font
+eg: &lt;i class="bi bi-bank"&gt; &lt;/i&gt;
+To change the size we can use the css.
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<br>
+
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html> 
